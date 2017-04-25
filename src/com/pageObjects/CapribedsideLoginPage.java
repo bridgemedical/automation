@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import com.bridge.utilities.IEDriver;
 
 
-
 public class CapribedsideLoginPage extends IEDriver {
 	private static WebElement element = null;
 	
