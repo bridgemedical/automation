@@ -2,11 +2,26 @@ package com.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.bridge.utilities.IEDriver;
 
 public class BabyMatchManagePatientInformationPage extends IEDriver
 {
+	
+	
+	@FindBy ( id = "editMother")
+	private WebElement editMotherLink;
+	
+	public WebElement getEditMotherLink() {
+		return editMotherLink;
+	}
+	
+	
+	
+	
+	
+	
 	private static WebElement element = null;
 	public static WebElement editMotherLink()
 	{
