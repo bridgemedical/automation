@@ -1,6 +1,5 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -9,48 +8,28 @@ import com.bridge.utilities.IEDriver;
 public class BabyMatchManagePatientInformationPage extends IEDriver
 {
 	
-	
+	private static WebElement element = null;
+	//Link to update motherdetails
 	@FindBy ( id = "editMother")
-	private WebElement editMotherLink;
+	public WebElement editMotherLink;
 	
-	public WebElement getEditMotherLink() {
+	public WebElement getEditMotherLink() 
+	{
 		return editMotherLink;
 	}
-	
-	
-	
-	
-	
-	
-	private static WebElement element = null;
-	public static WebElement editMotherLink()
-	{
-		element  = driver.findElement(By.id("editMother"));
-		return element;
-	}
-	
-	public static WebElement clickOnConfirmButton()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public static WebElement clickOnExitButton()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public static WebElement correctMotherField()
-	{
-		element  = driver.findElement(By.id("txtCorrectMother_Name"));
-		return element;
-	}
-	public static WebElement correctIdField()
-	{
-		element  = driver.findElement(By.id("txtCorrectMother_ID"));
-		return element;
-	}
-	
-	
+	//Correct Mother Name field
+	@FindBy ( id = "txtCorrectMother_Name")
+	public WebElement correctMotherNameTextBox;
+	//Correct Mother ID field
+	@FindBy ( id = "txtCorrectMother_ID")
+	public WebElement correctMotherIDTextBox;
+
+	//Confirm button
+	@FindBy ( id = "cmdOK")
+	public WebElement confirmButton;
+	//Exit button
+	@FindBy ( id = "cmdCancel")
+	public WebElement exitButton;
 	
 	
 
