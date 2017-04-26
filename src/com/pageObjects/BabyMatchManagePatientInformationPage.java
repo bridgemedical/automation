@@ -9,7 +9,7 @@ public class BabyMatchManagePatientInformationPage extends IEDriver
 {
 	
 	private static WebElement element = null;
-	//Link to update motherdetails
+	//Link to update mother details
 	@FindBy ( id = "editMother")
 	public WebElement editMotherLink;
 	

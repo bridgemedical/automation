@@ -12,7 +12,7 @@ public class BabyMatchManagePatientInformationFunctions
 	WebElement element;
 	Select sel;
 	BabyMatchManagePatientInformationPage managePatientInformation = PageFactory.initElements(IEDriver.driver,BabyMatchManagePatientInformationPage.class );
-	//Fuction to click on EditMother link
+	//Function to click on EditMother link
 	public void clickEditMotherLink()
 	{
 		managePatientInformation.editMotherLink.click();
