@@ -1,34 +1,14 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.bridge.utilities.IEDriver;;
-public class SystemManagerLoginPage extends IEDriver {
-	private static WebElement element = null;
-	
-public WebElement txt_box_username()
-	{
-		element  = driver.findElement(By.id("UserId"));
-		return element;
-	}
+public class SystemManagerLoginPage extends IEDriver 
+{
+	@FindBy (id = "UserId") 		public WebElement textboxUsername;
+	@FindBy (id = "Password") 		public WebElement textboxPassword;
+	@FindBy (id = "cmdLogin") 		public WebElement buttonLogin;
+	@FindBy (id = "errorsLabel") 	public WebElement labelErrorText;
 
-	public WebElement txt_box_password()
-	{
-		element=driver.findElement(By.id("Password"));
-		return element;
-	}
-
-	public WebElement button_login()
-	{
-		element = driver.findElement(By.id("cmdLogin"));
-		return element;
-
-	}
-	public WebElement error_Text()
-	{
-		element = driver.findElement(By.id("errorsLabel"));
-		return element;
-
-	}
 }

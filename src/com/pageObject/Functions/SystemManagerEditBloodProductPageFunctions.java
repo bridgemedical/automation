@@ -14,21 +14,21 @@ public class SystemManagerEditBloodProductPageFunctions
 	SystemManagerEditBloodProductPage editbooldprodpage = PageFactory.initElements(IEDriver.driver, SystemManagerEditBloodProductPage.class );
 	public void selectOptionForExpirationCheck(String a)
 	{
-		element= editbooldprodpage.expirationCheck();
+		element= editbooldprodpage.expirationCheck;
     	sel = new Select(element);
     	sel.selectByValue(a);
 	}
 
 	public void selectOptionForCompareBloodType(String a)
 	{
-		element = editbooldprodpage.compareBloodType();
+		element = editbooldprodpage.compareBloodType;
     	sel = new Select(element);
     	sel.selectByValue(a);
 	}
 	
 	public void selectOptionForISBT_128_BloodProduct(String a)
 	{
-		element = editbooldprodpage.ISBT_128_BloodProduct();
+		element = editbooldprodpage.ISBT_128_BloodProduct;
     	sel = new Select(element);
     	sel.selectByValue(a);
 	}

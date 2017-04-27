@@ -1,95 +1,24 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.bridge.utilities.IEDriver;
 
 public class SystemManagerEditBloodProductPage extends IEDriver
-
 {
-	private  WebElement element = null;
-	public  WebElement textboxCode()
-	{
-		element  = driver.findElement(By.id("txtCode"));
-		return element;
-	}
-	public  WebElement textboxName()
-	{
-		element  = driver.findElement(By.id("txtValue"));
-		return element;
-	}
-	public  WebElement textboxDescription()
-	{
-		element  = driver.findElement(By.id("txtDescription"));
-		return element;
-	}
-	public  WebElement bloodProductSubstitutionChart()
-	{
-		element  = driver.findElement(By.id("lstChart"));
-		return element;
-	}
-	public WebElement expirationCheck()
-	{
-		element  = driver.findElement(By.id("lstExpiration"));
-		return element;
-	}
-	
-	public  WebElement compareBloodType()
-	{
-		element  = driver.findElement(By.id("ListCompareBloodTypes"));
-		return element;
-	}
-	
-	public  WebElement ISBT_128_BloodProduct()
-	{
-		element  = driver.findElement(By.id("lstISBT128BloodProduct"));
-		return element;
-	}
-
-	public  WebElement displayAdditionalBloodTypeMismatchQuestion()
-	{
-		element  = driver.findElement(By.id("lstDisplayBloodProductQuestion"));
-		return element;
-	}
-	public  WebElement linkBloodProductAttributes()
-	{
-		element  = driver.findElement(By.id("lnkAttributes"));
-		return element;
-	}
-	//Product Attributes
-	public  WebElement checkboxAntiCMVNegative()
-	{
-		element  = driver.findElement(By.id("dlItems__ctl2_cboxItem"));
-		return element;
-	}
-	public  WebElement checkboxIrradiated()
-	{
-		element  = driver.findElement(By.id("dlItems__ctl3_cboxItem"));
-		return element;
-	}
-	public  WebElement checkboxHbSNegative()
-	{
-		element  = driver.findElement(By.id("dlItems__ctl4_cboxItem"));
-		return element;
-	}
-	public  WebElement linkBack()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public  WebElement buttonConfirm()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public  WebElement buttonCancel()
-	{
-		element  = driver.findElement(By.id("cmdCancel"));
-		return element;
-	}
-	
-	
-
-
+	@FindBy (id = "txtCode") 						public WebElement textboxCode;
+	@FindBy (id = "txtValue") 						public WebElement textboxName;
+	@FindBy (id = "txtDescription") 				public WebElement textboxDescription;
+	@FindBy (id = "lstChart") 						public WebElement bloodProductSubstitutionChart;
+	@FindBy (id = "lstExpiration") 					public WebElement expirationCheck;
+	@FindBy (id = "ListCompareBloodTypes") 			public WebElement compareBloodType;
+	@FindBy (id = "lstISBT128BloodProduct") 		public WebElement ISBT_128_BloodProduct;
+	@FindBy (id = "lstDisplayBloodProductQuestion")	public WebElement displayAdditionalBloodTypeMismatchQuestion;
+	@FindBy (id = "lnkAttributes") 					public WebElement linkBloodProductAttributes;
+	@FindBy (id = "dlItems__ctl2_cboxItem") 		public WebElement checkboxAntiCMVNegative;
+	@FindBy (id = "dlItems__ctl3_cboxItem") 		public WebElement checkboxIrradiated;
+	@FindBy (id = "dlItems__ctl4_cboxItem") 		public WebElement checkboxHbSNegative;
+	@FindBy (id = "cmdOK") 							public WebElement buttonConfirm;
+	@FindBy (id = "cmdCancel") 						public WebElement buttonCancel;
 }

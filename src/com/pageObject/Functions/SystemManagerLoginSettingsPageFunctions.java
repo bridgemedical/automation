@@ -14,49 +14,49 @@ public class SystemManagerLoginSettingsPageFunctions
 	Select sel;
 	public void selectForceChangePassword(String s) throws InterruptedException
     {
-    	element = loginsettingspage.forceChangePassword();
+    	element = loginsettingspage.forceChangePassword;
     	sel = new Select(element);
     	sel.selectByVisibleText(s);
     }
 	
 	public void selectPasswordAttemptsBefore(String s) throws InterruptedException
     {
-		element =loginsettingspage.passwordAttemptsBefore();
+		element =loginsettingspage.passwordAttemptsBefore;
     	sel = new Select(element);
     	sel.selectByVisibleText(s);
     }
 	
 	public void selectSessionTimeOutDuration_BabyMatch(String s) throws InterruptedException
     {
-    	element = loginsettingspage.sessionTimeoutDurationBabyMatch();
+    	element = loginsettingspage.sessionTimeoutDurationBabyMatch;
     	sel = new Select(element);
     	sel.selectByVisibleText(s);
     }
 	
 	public void selectSessionTimeOutDuration_SysMan(String s) throws InterruptedException
     {
-    	element = loginsettingspage.sessionTimeoutDurationSystemManager();
+    	element = loginsettingspage.sessionTimeoutDurationSystemManager;
     	sel = new Select(element);
     	sel.selectByVisibleText(s);
     }
 	
 	public void selectSessionTimeOutDuration_Transfusion(String s) throws InterruptedException
     {
-    	element= loginsettingspage.sessionTimeoutDurationTransfusion();
+    	element= loginsettingspage.sessionTimeoutDurationTransfusion;
     	sel = new Select(element);
     	sel.selectByVisibleText(s);
     }
 	
 	public void selectSessionTimeOutDuration_General(String s) throws InterruptedException
     {
-    	element =loginsettingspage.sessionTimeoutDuration();
+    	element =loginsettingspage.sessionTimeoutDuration;
     	sel = new Select(element);
     	sel.selectByVisibleText(s);
     }
 	
 	public void selectUnlockDuration(String s) throws InterruptedException
     {
-    	element = loginsettingspage.unlockDuration();
+    	element = loginsettingspage.unlockDuration;
     	sel = new Select(element);
     	sel.selectByVisibleText(s);
     	

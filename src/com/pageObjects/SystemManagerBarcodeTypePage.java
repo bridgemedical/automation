@@ -1,41 +1,16 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.bridge.utilities.IEDriver;
 
 public class SystemManagerBarcodeTypePage extends IEDriver
 {
-	private static WebElement element = null;
-	public static WebElement editLinkPatientIDWristband()
-	{
-		element  = driver.findElement(By.id("dlItems__ctl10_editLink" ));
-		return element;
-	}
+	@FindBy (id = "dlItems__ctl10_editLink") 	public WebElement editLinkPatientIDWristband;
+	@FindBy (id = "txtExtra") 					public WebElement textboxPrefix;
+	@FindBy (id = "txtExtra3") 					public WebElement textboxSuffix;
+	@FindBy (id = "cmdOK") 						public WebElement buttonConfirm;
+	@FindBy (id = "cmdCancel") 					public WebElement buttonCancel;
 	
-	//Edit barcode type page.
-	public static WebElement textboxPrefix()
-	{
-		element  = driver.findElement(By.id("txtExtra" ));
-		return element;
-	}
-	public static WebElement textboxSuffix()
-	{
-		element  = driver.findElement(By.id("txtExtra3" ));
-		return element;
-	}
-	public static WebElement buttonConfirm()
-	{
-		element  = driver.findElement(By.id("cmdOK" ));
-		return element;
-	}
-	public static WebElement buttonCancel()
-	{
-		element  = driver.findElement(By.id("cmdCancel" ));
-		return element;
-	}
-	
-	
-
 }

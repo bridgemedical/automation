@@ -10,7 +10,7 @@ public class SeleniumFunctions
 {
 	Select sel;
 	IEDriver iedriver = new IEDriver();
-	//Explicite wait function
+	//Explicit wait function
     public void waitForElement(String Locator)
     { 
           WebDriverWait wait = new WebDriverWait(iedriver.driver, 10000);
