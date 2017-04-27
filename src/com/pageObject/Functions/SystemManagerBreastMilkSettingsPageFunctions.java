@@ -15,21 +15,21 @@ public class SystemManagerBreastMilkSettingsPageFunctions
 			
 	public void selectFreshExpTimeUnit(String a) throws InterruptedException
     {
-		element= breastmailsettingspage.textBoxFreshExpTimeLengthUnits();
+		element= breastmailsettingspage.textBoxFreshExpTimeLengthUnits;
     	sel = new Select(element);
     	sel.selectByVisibleText(a);	
     }
 	
 	public void selectFrozenExpTimeUnit(String a) throws InterruptedException
 	{
-		 element= breastmailsettingspage.textBoxFrozenExpTimeLengthUnits();
+		 element= breastmailsettingspage.textBoxFrozenExpTimeLengthUnits;
 	     sel = new Select(element);
 	     sel.selectByVisibleText(a);
 	}
 	 
 	public void selectThawedExpTimeUnit(String a) throws InterruptedException
 	{
-		element = breastmailsettingspage.textBoxThawedExpTimeLengthUnits();
+		element = breastmailsettingspage.textBoxThawedExpTimeLengthUnits;
 		sel = new Select(element);
 		sel.selectByVisibleText(a);  	
     }

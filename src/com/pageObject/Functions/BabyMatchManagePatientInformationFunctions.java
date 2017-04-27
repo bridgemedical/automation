@@ -12,7 +12,8 @@ public class BabyMatchManagePatientInformationFunctions
 	WebElement element;
 	Select sel;
 	BabyMatchManagePatientInformationPage managePatientInformation = PageFactory.initElements(IEDriver.driver,BabyMatchManagePatientInformationPage.class );
-	//Fuction to click on EditMother link
+	//Function to click on EditMother link
+	
 	public void clickEditMotherLink()
 	{
 		managePatientInformation.editMotherLink.click();
@@ -23,14 +24,17 @@ public class BabyMatchManagePatientInformationFunctions
 	{
 		managePatientInformation.correctMotherNameTextBox.sendKeys(name);
 	}
+	
 	public void enterCorrectMotherID(String id)
 	{
 		managePatientInformation.correctMotherIDTextBox.sendKeys(id);
 	}
+	
 	public void clickConfirmButton()
 	{
 		managePatientInformation.confirmButton.click();
 	}
+	
 	public void clickExitButton()
 	{
 		managePatientInformation.exitButton.click();
