@@ -15,11 +15,12 @@ public class BabyMatchManagePatientInformationPage extends IEDriver
 	
 	public WebElement getEditMotherLink() 
 	{
-		return editMotherLink;
+	   return editMotherLink;
 	}
 	//Correct Mother Name field
 	@FindBy ( id = "txtCorrectMother_Name")
 	public WebElement correctMotherNameTextBox;
+	
 	//Correct Mother ID field
 	@FindBy ( id = "txtCorrectMother_ID")
 	public WebElement correctMotherIDTextBox;
@@ -27,6 +28,7 @@ public class BabyMatchManagePatientInformationPage extends IEDriver
 	//Confirm button
 	@FindBy ( id = "cmdOK")
 	public WebElement confirmButton;
+	
 	//Exit button
 	@FindBy ( id = "cmdCancel")
 	public WebElement exitButton;

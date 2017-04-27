@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
+import com.pageObject.Functions.BabyMatchSelectPatientFunctions;
 import com.pageObjects.BabyMatchSelectPatientPage;
 import com.pageObjects.CapribedsideBabyMatchPage;
 
@@ -34,16 +35,16 @@ public class BabyMatchCommonFunctionality extends IEDriver
 			babyMatchPage.scanRacipientID().sendKeys("]");
 	    }
 	    
-	    BabyMatchSelectPatientPage selectPatient;
+	    BabyMatchSelectPatientFunctions babyMatchFunctions;
 	    public void scanSelectPatientId(String a )  throws InterruptedException
 	    {
-	    	selectPatient = PageFactory.initElements(IEDriver.driver, BabyMatchSelectPatientPage.class );
+	    	PageFactory.initElements(IEDriver.driver, BabyMatchSelectPatientFunctions.class );
 	    	Actions actions= new Actions(driver);
 			actions.keyDown(Keys.ALT).perform();
-			selectPatient.scanPatientID().sendKeys("[");
-			selectPatient.scanPatientID().sendKeys(a);
+			babyMatchFunctions.enetrPatientID("["+"635201");
+			//selectPatient.scanPatientID().sendKeys(a);
 			actions.keyDown(Keys.ALT).perform();
-			selectPatient.scanPatientID().sendKeys("]");
+			babyMatchFunctions.enetrPatientID("]");
 			
 	    }
 

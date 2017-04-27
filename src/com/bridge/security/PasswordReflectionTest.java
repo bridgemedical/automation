@@ -3,6 +3,7 @@ package com.bridge.security;
 import org.testng.annotations.Test;
 
 import com.bridge.utilities.CommonFunctions;
+import com.pageObject.Functions.BabyMatchSelectPatientFunctions;
 import com.pageObjects.BabyMatchSelectPatientPage;
 import com.pageObjects.CapribedsideChangePasswordPage;
 import com.pageObjects.CapribedsideLoginPage;
@@ -83,10 +84,10 @@ public class PasswordReflectionTest
 	  
 	  /*************Baby Match*******************************/
 	// Try new user can login to the system
-	  BabyMatchSelectPatientPage babymatchPage = new BabyMatchSelectPatientPage();
+	      BabyMatchSelectPatientFunctions babyMatchFunctions = new BabyMatchSelectPatientFunctions();
 		  common.login(babymatchurl, testuserid, testuser_new_pwd);
 		  Thread.sleep(2000);  
-		  babymatchPage.button_Logout().click();
+		  babyMatchFunctions.clickLogoutLink();
 		  Thread.sleep(2000); 
 		  //change password link
 		  loginPage.link_clickhere().click();

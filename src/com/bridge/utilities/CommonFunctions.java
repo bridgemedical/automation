@@ -103,28 +103,7 @@ public class CommonFunctions extends IEDriver
 		select_page.txt_box_patientid().sendKeys("]");
 		Thread.sleep(1000);
 	}
-	
-	public void logout() throws InterruptedException
-	{
-		sysMain.linkLogout().click();
-	
-	}
-	
-	public void forceLogout() throws InterruptedException
-	{
-		sysMain.linkLogout().click();
-		
-	}
-	
-	public void receive_bottle() throws InterruptedException
-	{
-		//Edited-Sayyad
-		String URL="http://10.162.106.174/TransSpec2016010410/capribedside/login.aspx";
-		iedriver.callDriver(URL);
-		rece_page=PageFactory.initElements(IEDriver.driver, CapribedsideReceiveBottlesPage.class );
-		
-	}
-	
+
     public String uniqueNumber(int a)
 		{
 			
@@ -144,17 +123,7 @@ public class CommonFunctions extends IEDriver
 				return date;
        	}
      
-    public String isbtSupportNumber()
-          {
-				
-				SimpleDateFormat date1 = new SimpleDateFormat("yyMMddss");//("MM/dd/yyyy HH:mm");	    
-			    Calendar cal = Calendar.getInstance();
-			    cal.add(Calendar.DATE,0);	    		
-				String date = date1.format(cal.getTime());				
-				return date;
-			}
-    
-      public String currentDate(String dateFormat, int number)
+     public String currentDate(String dateFormat, int number)
 			{
 				SimpleDateFormat date1 = new SimpleDateFormat(dateFormat);	    //"MM/dd/yyyy HH:mm"
 			    Calendar cal = Calendar.getInstance();
@@ -163,12 +132,12 @@ public class CommonFunctions extends IEDriver
 				return date;
 				
 			}
-      @SuppressWarnings("static-access")	
-	  public void waitForElement(String Locator)
-	 {
-    	  WebDriverWait wait = new WebDriverWait(iedriver.driver, 10000);
-    	  wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Locator)));
-	  }
+      public void waitForElement(String Locator)
+      { 
+            WebDriverWait wait = new WebDriverWait(iedriver.driver, 10000);
+      	  wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Locator)));
+  	}
+    
 	  
 	 
 	  @SuppressWarnings("static-access")
