@@ -26,49 +26,49 @@ public class CapribedsideAdministerBottlesPage extends IEDriver {
 	@FindBy(id = "divModalErrorConfirm")
 	public WebElement warningPopup;
 
-	public WebElement warningPopup() {
+	public WebElement getWarningPopup() {
 		return warningPopup;
 	}
 
 	@FindBy(id = "modalErrorConfirm_cmdButton1")
 	public WebElement warningPopupYesButton;
 
-	public WebElement warningPopupYesButton() {
+	public WebElement getWarningPopupYesButton() {
 		return warningPopupYesButton;
 	}
 
 	@FindBy(id = "modalErrorConfirm_cmdCancel")
 	public WebElement warningPopupNoButton;
 
-	public WebElement warningPopupNoButton() {
+	public WebElement getWarningPopupNoButton() {
 		return warningPopupNoButton;
 	}
 
 	@FindBy(id = "errorLabel")
 	public WebElement donorBottleErrorMessage;
 
-	public WebElement donorBottleErrorMessage() {
+	public WebElement getDonorBottleErrorMessage() {
 		return donorBottleErrorMessage;
 	}
 
 	@FindBy(id = "cmdConfirm")
 	public WebElement confirmButton;
 
-	public WebElement confirmButton() {
+	public WebElement getConfirmButton() {
 		return confirmButton;
 	}
 
 	@FindBy(id = "cmdConfirm")
 	public WebElement exitButton;
 
-	public WebElement exitButton() {
+	public WebElement getExitButton() {
 		return exitButton;
 	}
 
 	@FindBy(id = "errorLabel")
 	public WebElement bottleConnotBeAdministerForThisPatientErrorMsg;
 
-	public WebElement bottleConnotBeAdministerForThisPatientErrorMsg() {
+	public WebElement getBottleConnotBeAdministerForThisPatientErrorMsg() {
 		return bottleConnotBeAdministerForThisPatientErrorMsg;
 	}
 
@@ -77,7 +77,7 @@ public class CapribedsideAdministerBottlesPage extends IEDriver {
 	@FindBy(id = "errorLabel")
 	public WebElement bottleNotReceivedErrorMessage;
 
-	public WebElement bottleNotReceivedErrorMessage() {
+	public WebElement getBottleNotReceivedErrorMessage() {
 		return bottleNotReceivedErrorMessage;
 	}
 

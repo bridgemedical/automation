@@ -11,9 +11,17 @@ public class BabyMatchSelectPatientPage extends IEDriver
 
     @FindBy ( id = "txtPatientId")
     public WebElement patientIDTextBox;
+    public WebElement getPatientIDTextBox() 
+	{
+		return patientIDTextBox;
+	}
     
     //logout link
 	@FindBy ( id = "header_cmdLogout")
     public WebElement logoutLink;
+	 public WebElement getlogoutLink() 
+		{
+			return logoutLink;
+		}
 	
 }

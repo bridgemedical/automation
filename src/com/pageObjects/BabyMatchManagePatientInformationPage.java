@@ -20,7 +20,7 @@ public class BabyMatchManagePatientInformationPage extends IEDriver
 	//Correct Mother Name field
 	@FindBy ( id = "txtCorrectMother_Name")	
 	public WebElement correctMotherNameTextBox;
-	public WebElement correctMotherNameTextBox() 
+	public WebElement getcorrectMotherNameTextBox() 
 	{
 		return correctMotherNameTextBox;
 	}
@@ -28,7 +28,7 @@ public class BabyMatchManagePatientInformationPage extends IEDriver
 	//Correct Mother ID field
 	@FindBy ( id = "txtCorrectMother_ID")	
 	public WebElement correctMotherIDTextBox;
-	public WebElement correctMotherIDTextBox() 
+	public WebElement getCorrectMotherIDTextBox() 
 	{
 		return correctMotherIDTextBox;
 	}
@@ -36,7 +36,7 @@ public class BabyMatchManagePatientInformationPage extends IEDriver
 	//Confirm button
 	@FindBy ( id = "cmdOK")					
 	public WebElement confirmButton;
-	public WebElement confirmButton() 
+	public WebElement getConfirmButton() 
 	{
 		return confirmButton;
 	}
@@ -44,7 +44,7 @@ public class BabyMatchManagePatientInformationPage extends IEDriver
 	//Exit button
 	@FindBy ( id = "cmdCancel")				
 	public WebElement exitButton;
-	public WebElement exitButton() 
+	public WebElement getExitButton() 
 	{
 		return exitButton;
 	}

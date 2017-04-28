@@ -17,11 +17,19 @@ public class SeleniumFunctions
     	  wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Locator)));
 	}
     
+    
     //Function to select values from drop down.
-	public void selectValue(WebElement element,String visibleText)
+	public void selectValueByVisibleText(WebElement element,String visibleText)
 	{
 		 sel = new Select(element);
 	     sel.selectByVisibleText(visibleText);
+	}
+	
+	public void selectValueByValueAttribute(WebElement element,String value)
+	{
+    	//element = administerpage.dropdownBloodPlasmaDerivative();
+    	sel = new Select(element);
+    	sel.selectByValue(value);
 	}
 	
 

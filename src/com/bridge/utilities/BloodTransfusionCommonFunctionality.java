@@ -270,7 +270,7 @@ public class BloodTransfusionCommonFunctionality extends IEDriver
 		 Actions act = new Actions(iedriver.driver);
 		 stTransPage.scanRacipientUnitNumber().sendKeys(unitNo);
 		 act.sendKeys(Keys.ENTER).perform();
-         common.waitForElement("lstBloodType");
+        // common.waitForElement("lstBloodType");
 		 transCommon.selectPatientBloodTypeVisibleText("O pos");
 		 act.sendKeys(Keys.ENTER).perform();
 		 Thread.sleep(2000);
