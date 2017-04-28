@@ -6,8 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import com.bridge.utilities.IEDriver;
 
 public class BabyMatchSelectPatientPage extends IEDriver
-{   private static WebElement element = null;
-
+{   
+	private static WebElement element = null;
 
     @FindBy ( id = "txtPatientId")
     public WebElement patientIDTextBox;

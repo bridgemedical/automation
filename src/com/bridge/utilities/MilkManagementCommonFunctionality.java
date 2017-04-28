@@ -77,7 +77,7 @@ public class MilkManagementCommonFunctionality extends IEDriver
 	 public void bottleConnotBeAdministerForThisPatientErrorMsg() throws IOException
 	 {
 		 admBottle = PageFactory.initElements(IEDriver.driver, CapribedsideAdministerBottlesPage.class );
-	    	boolean wb = admBottle.bottleConnotBeAdministerForThisPatientErrorMsg().isDisplayed();
+	    	boolean wb = admBottle.bottleConnotBeAdministerForThisPatientErrorMsg.isDisplayed();
 	    	if(wb)
 	    	{
 	    		System.out.println("This bottle may not be administered to this patient.-Is displayed");
