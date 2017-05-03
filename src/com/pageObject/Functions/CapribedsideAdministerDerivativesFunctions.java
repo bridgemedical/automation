@@ -21,7 +21,8 @@ public class CapribedsideAdministerDerivativesFunctions {
 	public void selectBloodPlasmaDerivative(String bloodPlasmaDerivative) {
 		commonFunctions.waitForElement(administerpage.bloodPlasmaDerivativeDropDown);
 		try {
-			seleniumFunctions.selectValueByVisibleText(administerpage.getBloodPlasmaDerivativeDropDown(), bloodPlasmaDerivative);
+			seleniumFunctions.selectValueByVisibleText(administerpage.getBloodPlasmaDerivativeDropDown(),
+					bloodPlasmaDerivative);
 		} catch (Exception e) {
 			System.out.print("CapribedsideAdministerDerivativesFunctions-selectBloodPlasmaDerivative:Method is failed");
 		}
@@ -41,7 +42,7 @@ public class CapribedsideAdministerDerivativesFunctions {
 		}
 
 	}
-	
+
 	/*
 	 * Method to enter patient Name
 	 */
@@ -55,6 +56,7 @@ public class CapribedsideAdministerDerivativesFunctions {
 		}
 
 	}
+
 	/*
 	 * Method to Select patient blood type
 	 */
@@ -67,6 +69,7 @@ public class CapribedsideAdministerDerivativesFunctions {
 		}
 
 	}
+
 	/*
 	 * Method to Eenter Manufacturer.
 	 */
@@ -75,13 +78,15 @@ public class CapribedsideAdministerDerivativesFunctions {
 		try {
 			administerpage.manufacturerTextBox.sendKeys(manufacturer);
 		} catch (Exception e) {
-			System.out.print("CapribedsideAdministerDerivativesFunctions-enterPaenterManufacturertientName :Method is failed");
+			System.out.print(
+					"CapribedsideAdministerDerivativesFunctions-enterPaenterManufacturertientName :Method is failed");
 
 		}
 
 	}
+
 	/*
-	 *Method to Enter Lot Number
+	 * Method to Enter Lot Number
 	 */
 	public void enterLotNumber(String lotNumber) {
 		commonFunctions.waitForElement(administerpage.lotNumberTextBox);
@@ -93,8 +98,9 @@ public class CapribedsideAdministerDerivativesFunctions {
 		}
 
 	}
+
 	/*
-	 *Method to Eneter IU Concentration.
+	 * Method to Eneter IU Concentration.
 	 */
 	public void enterIUConcentration(String iuConcentration) {
 		commonFunctions.waitForElement(administerpage.iuConcentrationTextBox);
@@ -106,8 +112,9 @@ public class CapribedsideAdministerDerivativesFunctions {
 		}
 
 	}
+
 	/*
-	 * Method to Select injection site 
+	 * Method to Select injection site
 	 */
 	public void selectInjectionSite(String injectionSite) {
 		commonFunctions.waitForElement(administerpage.injectionSiteDropDown);
@@ -118,6 +125,7 @@ public class CapribedsideAdministerDerivativesFunctions {
 		}
 
 	}
+
 	/*
 	 * Method to enter serial number
 	 */
@@ -129,7 +137,8 @@ public class CapribedsideAdministerDerivativesFunctions {
 			System.out.print("CapribedsideAdministerDerivativesFunctions-enterSerialNumber :Method is failed");
 
 		}
-    }
+	}
+
 	/*
 	 * Method to enter volume
 	 */
@@ -141,7 +150,8 @@ public class CapribedsideAdministerDerivativesFunctions {
 			System.out.print("CapribedsideAdministerDerivativesFunctions-enterVolume :Method is failed");
 
 		}
-    }
+	}
+
 	/*
 	 * Method to enter expire date
 	 */
@@ -153,10 +163,10 @@ public class CapribedsideAdministerDerivativesFunctions {
 			System.out.print("CapribedsideAdministerDerivativesFunctions-enterExpireDate :Method is failed");
 
 		}
-    }
-	
+	}
+
 	/*
-	 * Method to enter quantity to administer derivative 
+	 * Method to enter quantity to administer derivative
 	 */
 	public void enterQuantity(String quantity) {
 		commonFunctions.waitForElement(administerpage.quantityTextBox);
@@ -166,22 +176,85 @@ public class CapribedsideAdministerDerivativesFunctions {
 			System.out.print("CapribedsideAdministerDerivativesFunctions-enterQuantity :Method is failed");
 
 		}
-    }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
+	}
 
+	/*Cosignature section
+	 * Method to enter Cosign username
+	 */
+	public void enterUserName(String userName) {
+		commonFunctions.waitForElement(administerpage.getUserIDTextBox());
+		try {
+			administerpage.getUserIDTextBox().sendKeys(userName);
+		} catch (Exception e) {
+			System.out.print("CapribedsideAdministerDerivativesFunctions-enterUserName :Method is failed");
+
+		}
+
+	}
+	/*
+	 * Method to enter Cosign Password
+	 */
+	public void enterPassword(String password) {
+		commonFunctions.waitForElement(administerpage.getPasswordTextBox());
+		try {
+			administerpage.getPasswordTextBox().sendKeys(password);
+		} catch (Exception e) {
+			System.out.print("CapribedsideAdministerDerivativesFunctions-enterPassword :Method is failed");
+
+		}
+
+	}
+	/*
+	 * Method to click confirm button
+	 */
+	public void clickContinueButton() {
+		commonFunctions.waitForElement(administerpage.getContinueButton());
+		try {
+			administerpage.getContinueButton().click();
+		} catch (Exception e) {
+			System.out.print("CapribedsideAdministerDerivativesFunctions-clickContinue :Method is failed");
+
+		}
+
+	}
+	/*
+	 * Method to click cancel button 
+	 */
+	public void clickCancelButton() {
+		commonFunctions.waitForElement(administerpage.getCancelButton());
+		try {
+			administerpage.getCancelButton().click();
+		} catch (Exception e) {
+			System.out.print("CapribedsideAdministerDerivativesFunctions-clickCancelButton :Method is failed");
+
+		}
+
+	}
+	/*
+	 * Method to click logout link from header 
+	 */
+	public void clickLogoutLink() {
+		commonFunctions.waitForElement(administerpage.getLinkLogOut());
+		try {
+			administerpage.getLinkLogOut().click();
+		} catch (Exception e) {
+			System.out.print("CapribedsideAdministerDerivativesFunctions-clickLogoutLink :Method is failed");
+
+		}
+
+	}
+	/*
+	 * Method to click logout link from header 
+	 */
+	public void clickYesFromLogoutConfim() {
+		commonFunctions.waitForElement(administerpage.getLinkLogOut());
+		try {
+			administerpage.getLinkLogOut().click();
+		} catch (Exception e) {
+			System.out.print("CapribedsideAdministerDerivativesFunctions-clickLogoutLink :Method is failed");
+
+		}
+
+	}
+
+}

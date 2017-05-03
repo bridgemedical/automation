@@ -17,7 +17,7 @@ import multiScreenShot.MultiScreenShot;
 public class MilkManagementCommonFunctionality extends IEDriver
 
 {
-	CapribedsideSelectPatientPage selectPatient;
+	/*CapribedsideSelectPatientPage selectPatient;
 	String FilePath = "C:\\Temp\\MilkManagementCommonFunctionality.html";
 	String TestName = "PatientIdentificationErrorTest";
 	MultiScreenShot multiScreens = new MultiScreenShot("C:/Temp/","MilkManagementCommonFunctionality");
@@ -57,7 +57,7 @@ public class MilkManagementCommonFunctionality extends IEDriver
 	    	}
 		 
 	 }
-	/* 
+	 
 	 public void duplicateBottleErrorMsg() throws IOException
 	 {
 		 receiveBottle = PageFactory.initElements(IEDriver.driver, CapribedsideReceiveBottlesPage.class );

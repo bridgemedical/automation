@@ -24,7 +24,7 @@ public class BloodTransfusionCommonFunctionality extends IEDriver
 	String FilePath = "C:\\Temp\\BloodTransfusionCommonFunctionality.html";
 	String TestName = "PatientIdentificationErrorTest";
 	MultiScreenShot multiScreens = new MultiScreenShot("C:/Temp/","BloodTransfusionCommonFunctionality");
-	IEDriver iedriver = new IEDriver(FilePath, TestName);
+	//IEDriver iedriver = new IEDriver(FilePath, TestName);
 	
     //String a = "635201";
    /* public void scanRacipientPatientID(String a)  throws InterruptedException

@@ -12,7 +12,7 @@ import multiScreenShot.MultiScreenShot;
 
 public class CapribedsideNavigation extends IEDriver
 {
-	 String FilePath = "C:\\Temp\\Sayyad.html";
+	/* String FilePath = "C:\\Temp\\Sayyad.html";
 	 String TestName = "Recive Bottle";
 	 IEDriver iedriver = new IEDriver(FilePath, TestName); 
      CommonFunctions fun = new CommonFunctions();
@@ -37,7 +37,7 @@ public class CapribedsideNavigation extends IEDriver
 	    fun.scanpatientid("635201");
 		
 	     
-	  }
+	  }*/
 
 	 @AfterClass
 	  public void postExecutionTest() 

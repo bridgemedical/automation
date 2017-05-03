@@ -35,7 +35,7 @@ public class IEDriver {
 
 	}
 
-	public IEDriver(String FilePath, String TestName) {
+	/*public IEDriver(String FilePath, String TestName) {
 
 		extent = new ExtentReports(FilePath, false);
 		test = extent.startTest(TestName);
@@ -60,7 +60,7 @@ public class IEDriver {
 
 	public WebDriver getCurrentdriver() {
 		return ieDriver;
-	}
+	}*/
 
 	public IEDriver(String URL) {
 
