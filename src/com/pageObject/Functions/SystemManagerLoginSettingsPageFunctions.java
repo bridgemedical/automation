@@ -9,7 +9,7 @@ import com.pageObjects.SystemManagerLoginSettingsPage;
 public class SystemManagerLoginSettingsPageFunctions 
 {
 
-	SystemManagerLoginSettingsPage loginsettingspage = PageFactory.initElements(IEDriver.driver, SystemManagerLoginSettingsPage.class );
+	SystemManagerLoginSettingsPage loginsettingspage = PageFactory.initElements(IEDriver.ieDriver, SystemManagerLoginSettingsPage.class );
 	WebElement element;
 	Select sel;
 	public void selectForceChangePassword(String s) throws InterruptedException

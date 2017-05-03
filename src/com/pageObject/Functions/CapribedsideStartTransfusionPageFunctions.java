@@ -11,14 +11,14 @@ import com.pageObjects.CapribedsideStartTransfusionPage;
 
 public class CapribedsideStartTransfusionPageFunctions {
 	
-	CapribedsideStartTransfusionPage starttranspage = PageFactory.initElements(IEDriver.driver, CapribedsideStartTransfusionPage.class );
+	CapribedsideStartTransfusionPage starttranspage = PageFactory.initElements(IEDriver.ieDriver, CapribedsideStartTransfusionPage.class );
 	WebElement element;
 	Select sel;
 	Actions actions;	
 	public void scanRacipientMRN(String a)  throws InterruptedException
     {
 	   
-    	actions= new Actions(IEDriver.driver);
+    	actions= new Actions(IEDriver.ieDriver);
 		actions.keyDown(Keys.ALT).perform();
 		starttranspage.textboxRacipientMRN().sendKeys("[");
 		Thread.sleep(1000);
@@ -32,7 +32,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	
 	public void scanRacipientISBTUnitNumber(String a)  throws InterruptedException	
 	{
-	 	actions= new Actions(IEDriver.driver);
+	 	actions= new Actions(IEDriver.ieDriver);
 		actions.keyDown(Keys.ALT).perform();
 		starttranspage.scanRacipientUnitNumber().sendKeys("[");
 			//Thread.sleep(1000);
@@ -44,7 +44,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	 
 	public void scanDonorUnitNumber(String a)  throws InterruptedException
 	{ 
-		actions= new Actions(IEDriver.driver);
+		actions= new Actions(IEDriver.ieDriver);
 		actions.keyDown(Keys.ALT).perform();
 		starttranspage.donorScanUnitNumber().sendKeys("[");
 			Thread.sleep(1000);
@@ -56,7 +56,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	  
 	  public void scanDonorUnitDivision(String a)  throws InterruptedException
 	    {
-			actions= new Actions(IEDriver.driver);
+			actions= new Actions(IEDriver.ieDriver);
 			actions.keyDown(Keys.ALT).perform();
 			starttranspage.donorUnitDivision().sendKeys("[");
 			//Thread.sleep(1000);
@@ -75,7 +75,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	  
 	  public void scanDonorBloodProduct(String a)  throws InterruptedException
 	    {
-	    	actions= new Actions(IEDriver.driver);
+	    	actions= new Actions(IEDriver.ieDriver);
 			actions.keyDown(Keys.ALT).perform();
 			starttranspage.donorBloodProductDropDown().sendKeys("[");
 			//Thread.sleep(1000);
@@ -88,7 +88,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	  
 	  public void scanDonorBloodProductLookupfield(String a)  throws InterruptedException
 	    {
-	    	actions= new Actions(IEDriver.driver);
+	    	actions= new Actions(IEDriver.ieDriver);
 			actions.keyDown(Keys.ALT).perform();
 			starttranspage.isbtDonorBloodProductLookup().sendKeys("[");
 			//Thread.sleep(1000);

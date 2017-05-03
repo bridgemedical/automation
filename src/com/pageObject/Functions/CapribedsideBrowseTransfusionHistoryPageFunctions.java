@@ -9,7 +9,7 @@ import com.pageObjects.CapribedsideBrowseTransfusionHistoryPage;
 
 public class CapribedsideBrowseTransfusionHistoryPageFunctions {
 	
-	CapribedsideBrowseTransfusionHistoryPage browsetranshistorypage= PageFactory.initElements(IEDriver.driver, 	CapribedsideBrowseTransfusionHistoryPage.class );
+	CapribedsideBrowseTransfusionHistoryPage browsetranshistorypage= PageFactory.initElements(IEDriver.ieDriver, 	CapribedsideBrowseTransfusionHistoryPage.class );
 	WebElement element;
 	Select sel;
 	

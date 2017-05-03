@@ -3,9 +3,9 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
 
-public class CapribedsideAdministerDerivativesPage extends IEDriver {
+
+public class CapribedsideAdministerDerivativesPage {
 
 	@FindBy(id = "lstDerivatives")
 	public WebElement bloodPlasmaDerivativeDropDown;
@@ -22,10 +22,10 @@ public class CapribedsideAdministerDerivativesPage extends IEDriver {
 	}
 
 	@FindBy(id = "grdAttributes__ctl3_textAttribute")
-	public WebElement patientNamaeTextBox;
+	public WebElement patientNameTextBox;
 
 	public WebElement getPatientNameTextBox() {
-		return patientNamaeTextBox;
+		return patientNameTextBox;
 	}
 
 	@FindBy(id = "grdAttributes__ctl4_listAttribute")

@@ -10,7 +10,7 @@ import com.pageObjects.SystemManagerEditPocPage;
 public class SystemManagerEditPocPageFunctions 
 {
 
-	SystemManagerEditPocPage editpocpage = PageFactory.initElements(IEDriver.driver, SystemManagerEditPocPage.class );
+	SystemManagerEditPocPage editpocpage = PageFactory.initElements(IEDriver.ieDriver, SystemManagerEditPocPage.class );
 	WebElement element;
 	Select sel;
 	

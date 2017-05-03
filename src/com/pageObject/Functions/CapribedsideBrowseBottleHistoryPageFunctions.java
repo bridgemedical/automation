@@ -11,7 +11,7 @@ public class CapribedsideBrowseBottleHistoryPageFunctions {
 	
 	WebElement element;
 	Select drop;
-	CapribedsideBrowseBottleHistoryPage browsebottlehistory = PageFactory.initElements(IEDriver.driver,CapribedsideBrowseBottleHistoryPage.class );
+	CapribedsideBrowseBottleHistoryPage browsebottlehistory = PageFactory.initElements(IEDriver.ieDriver,CapribedsideBrowseBottleHistoryPage.class );
 	
 	public  Select dropDwn_FinalStatus()
 	{

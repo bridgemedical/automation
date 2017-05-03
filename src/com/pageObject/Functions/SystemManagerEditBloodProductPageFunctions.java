@@ -11,7 +11,7 @@ public class SystemManagerEditBloodProductPageFunctions
 {
 	WebElement element;
 	Select sel;
-	SystemManagerEditBloodProductPage editbooldprodpage = PageFactory.initElements(IEDriver.driver, SystemManagerEditBloodProductPage.class );
+	SystemManagerEditBloodProductPage editbooldprodpage = PageFactory.initElements(IEDriver.ieDriver, SystemManagerEditBloodProductPage.class );
 	public void selectOptionForExpirationCheck(String a)
 	{
 		element= editbooldprodpage.expirationCheck;

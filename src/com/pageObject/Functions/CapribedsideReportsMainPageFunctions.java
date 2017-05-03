@@ -9,7 +9,7 @@ import com.pageObjects.CapribedsideReportsMainPage;
 
 public class CapribedsideReportsMainPageFunctions 
 {
-	CapribedsideReportsMainPage reportpage = PageFactory.initElements(IEDriver.driver, CapribedsideReportsMainPage.class ); 
+	CapribedsideReportsMainPage reportpage = PageFactory.initElements(IEDriver.ieDriver, CapribedsideReportsMainPage.class ); 
 	WebElement element;
 	Select sel;
 	 public void selectReport(String a) throws InterruptedException

@@ -1,45 +1,49 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.bridge.utilities.IEDriver;
+import com.pageObject.Functions.CapribedsideLoginFunctions;
 
 
-public class CapribedsideLoginPage extends IEDriver {
-	private static WebElement element = null;
+public class CapribedsideLoginPage  {
 	
-    public WebElement txt_box_username()
-	{
-		element  = driver.findElement(By.id("UserId"));
-		return element;
+	
+	@FindBy (id="UserId")
+	private WebElement userName;
+//	public WebElement getUserName() 
+//	{
+//		return userName;
+//	}
+	
+	public WebElement getUserName() {
+		return userName;
 	}
 
-	public  WebElement txt_box_password()
+	@FindBy (id="Password")
+	public WebElement password;
+	public WebElement getPassword() 
 	{
-		element=driver.findElement(By.id("Password"));
-		return element;
+		return password;
 	}
-
-	public  WebElement button_login()
+	
+	@FindBy (id="cmdLogin")
+	public WebElement loginButton;
+	public WebElement getLoginButton() 
 	{
-		element = driver.findElement(By.id("cmdLogin"));
-		return element;
-
+		return loginButton;
 	}
-	public  WebElement link_clickhere()
+	@FindBy (id="btnChangePw")
+	public WebElement clickHereLink;
+	public WebElement getClickHereLink() 
 	{
-		element = driver.findElement(By.id("btnChangePw"));
-		return element;
-
+		return clickHereLink;
 	}
+	
 	//Hazards
-	
-	public  WebElement errMsgNoPrivilegeToAccessBridgeMedical()
-	{
-		element = driver.findElement(By.id("errorsLabel"));
-		return element;
-
-	}
+	@FindBy (id="errorsLabel")
+	public WebElement noPrivilegeToAccessBridgeMedicalErrorMessage;
 	
 }

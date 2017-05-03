@@ -9,7 +9,7 @@ import com.pageObjects.CapribedsideEndTransfusionPage;
 
 public class CapribedsideEndTransfusionPageFunctions {
 	
-	CapribedsideEndTransfusionPage endtransfusionpage = PageFactory.initElements(IEDriver.driver, CapribedsideEndTransfusionPage.class );
+	CapribedsideEndTransfusionPage endtransfusionpage = PageFactory.initElements(IEDriver.ieDriver, CapribedsideEndTransfusionPage.class );
 	private WebElement element = null;
 	Select sel;
 	public void selectBlodProduct(int a)

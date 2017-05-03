@@ -12,6 +12,7 @@ public class BabyMatchCommonFunctionality extends IEDriver
 {
 	  CapribedsideBabyMatchPage babyMatchPage;
 	    //String a = "635201";
+	  /*
 	    public void scanBabyMatchPatients(String a)  throws InterruptedException
 	    {
 	    	//iedriver.scanpatient("635201");
@@ -46,6 +47,6 @@ public class BabyMatchCommonFunctionality extends IEDriver
 			actions.keyDown(Keys.ALT).perform();
 			babyMatchFunctions.enetrPatientID("]");
 			
-	    }
+	    }*/
 
 }

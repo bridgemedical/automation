@@ -8,7 +8,7 @@ import com.pageObjects.SystemManagerReactionSignsAndSymptomsPage;
 public class SystemManagerReactionSignsAndSymptomsPageFunctions 
 {
 	
-	SystemManagerReactionSignsAndSymptomsPage reactionsignspage=  PageFactory.initElements(IEDriver.driver, SystemManagerReactionSignsAndSymptomsPage.class );
+	SystemManagerReactionSignsAndSymptomsPage reactionsignspage=  PageFactory.initElements(IEDriver.ieDriver, SystemManagerReactionSignsAndSymptomsPage.class );
 
 	public void createReactionSignsAndSymptoms(String signName,String description) throws Throwable
 	{

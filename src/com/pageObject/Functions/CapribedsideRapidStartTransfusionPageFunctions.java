@@ -9,7 +9,7 @@ import com.pageObjects.CapribedsideRapidStartTransfusionPage;
 public class CapribedsideRapidStartTransfusionPageFunctions {
 
 	WebElement element;
-	CapribedsideRapidStartTransfusionPage rapidtranspage = PageFactory.initElements(IEDriver.driver, 	CapribedsideRapidStartTransfusionPage.class );
+	CapribedsideRapidStartTransfusionPage rapidtranspage = PageFactory.initElements(IEDriver.ieDriver, 	CapribedsideRapidStartTransfusionPage.class );
 	Select sel;
 	public void selectDonorBloodType(String a)
 	{

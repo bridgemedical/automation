@@ -12,87 +12,72 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class IEDriver   
-{
-	
-	public static WebDriver driver;
+public class IEDriver {
+
+	public static WebDriver ieDriver;
 	ExtentReports extent;
 	ExtentTest test;
-	public void callDriver(String URL) throws InterruptedException{
-	
-	System.setProperty("webdriver.ie.driver","C:/IEDriverServer_Win32_2.53.0/IEDriverServer.exe");	
-	driver = new InternetExplorerDriver();	
-	driver.navigate().to(URL);
-	Thread.sleep(1000);
-	driver.manage().window().maximize();
-	
-	
-	
+	String URL;
+	/*
+	 * public void callDriver(String URL) throws InterruptedException{
+	 * 
+	 * System.setProperty("webdriver.ie.driver",
+	 * "C:/IEDriverServer_Win32_2.53.0/IEDriverServer.exe"); driver = new
+	 * InternetExplorerDriver(); driver.navigate().to(URL); Thread.sleep(1000);
+	 * driver.manage().window().maximize();
+	 * 
+	 * 
+	 * 
+	 * }
+	 */
+
+	public IEDriver() {
+
 	}
-	   
-	    public IEDriver(){
-		
-	     }
-	
-		public IEDriver(String FilePath, String TestName){
-				
-				
-				
-				extent = new ExtentReports(FilePath, false);
-				test = extent.startTest(TestName);
-				
-			}
-			
-			public ExtentReports extent_Reports(){
-				
-				
-				return extent;	
-				
-			}
-			
-			public ExtentTest extent_Test(){	
-				
-				//test = extent.startTest(TestName);
-				return test;		
-			}
-			
-			public void close()
-			{
-				driver.close();
-			}
 
-			public WebElement findElement(By arg0) {
-				// TODO Auto-generated method stub
-				return null;
-			}
+	public IEDriver(String FilePath, String TestName) {
 
-			public List<WebElement> findElements(By arg0) {
-				// TODO Auto-generated method stub
-				return null;
-			}
+		extent = new ExtentReports(FilePath, false);
+		test = extent.startTest(TestName);
 
-			public void get(String arg0) {
-				// TODO Auto-generated method stub
-				
-			}
+	}
 
-			public List<WebElement> getElements(By xpath) {
-				// TODO Auto-generated method stub
-				return null;
-			}
+	public ExtentReports extent_Reports() {
 
-			public WebDriver getCurrentdriver() {
-				return driver;
-			}
+		return extent;
 
-		
-		
-			
-		
-			
-		
+	}
 
-	
-	
+	public ExtentTest extent_Test() {
+
+		// test = extent.startTest(TestName);
+		return test;
+	}
+
+	public void close() {
+		ieDriver.close();
+	}
+
+	public WebDriver getCurrentdriver() {
+		return ieDriver;
+	}
+
+	public IEDriver(String URL) {
+
+		this.URL = URL;
+		ieDriver = iEDriver();
+
+	}
+
+	public WebDriver iEDriver() {
+
+		System.setProperty("webdriver.ie.driver", "C:/IEDriverServer_Win32_2.53.0/IEDriverServer.exe");
+		ieDriver = new InternetExplorerDriver();
+		ieDriver.navigate().to(URL);
+		ieDriver.manage().window().maximize();
+
+		return ieDriver;
+
+	}
 
 }

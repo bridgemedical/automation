@@ -8,7 +8,7 @@ import com.pageObjects.SystemManagerUsersPage;
 
 public class SystemManagerUsersPageFunctions 
 {
-	SystemManagerUsersPage userspage = PageFactory.initElements(IEDriver.driver, SystemManagerUsersPage.class );
+	SystemManagerUsersPage userspage = PageFactory.initElements(IEDriver.ieDriver, SystemManagerUsersPage.class );
 	Select sel;
 	WebElement element;
  	public void selectCreateUserRole(String s)

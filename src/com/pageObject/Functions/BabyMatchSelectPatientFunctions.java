@@ -8,7 +8,7 @@ import com.pageObjects.BabyMatchSelectPatientPage;
 public class BabyMatchSelectPatientFunctions
 {
 	
-	BabyMatchSelectPatientPage babyMatchSelectPatient = PageFactory.initElements(IEDriver.driver,BabyMatchSelectPatientPage.class );
+	BabyMatchSelectPatientPage babyMatchSelectPatient = PageFactory.initElements(IEDriver.ieDriver,BabyMatchSelectPatientPage.class );
 	public void enetrPatientID(String patientID)
 	{
 		babyMatchSelectPatient.patientIDTextBox.sendKeys();

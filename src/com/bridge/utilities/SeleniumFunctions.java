@@ -13,7 +13,7 @@ public class SeleniumFunctions
 	//Explicit wait function
     public void waitForElement(String Locator)
     { 
-          WebDriverWait wait = new WebDriverWait(iedriver.driver, 10000);
+          WebDriverWait wait = new WebDriverWait(iedriver.ieDriver, 10000);
     	  wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Locator)));
 	}
     

@@ -11,7 +11,7 @@ public class SystemManagerBreastMilkSettingsPageFunctions
 {
 	WebElement element;
 	Select sel;
-	SystemManagerBreastMilkSettingsPage breastmailsettingspage =  PageFactory.initElements(IEDriver.driver, SystemManagerBreastMilkSettingsPage.class );
+	SystemManagerBreastMilkSettingsPage breastmailsettingspage =  PageFactory.initElements(IEDriver.ieDriver, SystemManagerBreastMilkSettingsPage.class );
 			
 	public void selectFreshExpTimeUnit(String a) throws InterruptedException
     {

@@ -7,7 +7,7 @@ import com.pageObjects.SystemManagerReactionInstructionPage;
 
 public class SystemManagerReactionInstructionPageFunctions
 {
-	SystemManagerReactionInstructionPage reactioninstrpage = PageFactory.initElements(IEDriver.driver, SystemManagerReactionInstructionPage.class );
+	SystemManagerReactionInstructionPage reactioninstrpage = PageFactory.initElements(IEDriver.ieDriver, SystemManagerReactionInstructionPage.class );
 			
 	public void createReactionInstruction(String reactionName,String description) throws Throwable
 	{

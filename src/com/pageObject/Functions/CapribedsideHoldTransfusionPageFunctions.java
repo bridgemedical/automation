@@ -12,7 +12,7 @@ public class CapribedsideHoldTransfusionPageFunctions
 {
 	Select sel;
 	WebElement element;
-	CapribedsideHoldTransfusionPage holdtranspage = PageFactory.initElements(IEDriver.driver, 	CapribedsideHoldTransfusionPage.class );
+	CapribedsideHoldTransfusionPage holdtranspage = PageFactory.initElements(IEDriver.ieDriver, 	CapribedsideHoldTransfusionPage.class );
 
 	public void selectBlodProduct(int a)
 	{

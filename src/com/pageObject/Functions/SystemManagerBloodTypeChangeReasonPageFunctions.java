@@ -15,7 +15,7 @@ import com.pageObjects.SystemManagerBloodTypeChangeReasonPage;
 public class SystemManagerBloodTypeChangeReasonPageFunctions 
 {
 
-	SystemManagerBloodTypeChangeReasonPage bloodtypechangepage = PageFactory.initElements(IEDriver.driver, SystemManagerBloodTypeChangeReasonPage.class );
+	SystemManagerBloodTypeChangeReasonPage bloodtypechangepage = PageFactory.initElements(IEDriver.ieDriver, SystemManagerBloodTypeChangeReasonPage.class );
 	
 	//Method to create Reason for blood type change.
 	public void createReasonForBloodTypeChange(String code,String name,String description) 

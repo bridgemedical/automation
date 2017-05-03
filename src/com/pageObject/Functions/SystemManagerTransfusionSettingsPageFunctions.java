@@ -11,7 +11,7 @@ public class SystemManagerTransfusionSettingsPageFunctions
 {
 	WebElement element;
 	Select sel;
-	SystemManagerTransfusionSettingsPage transfusionsettings =  PageFactory.initElements(IEDriver.driver, SystemManagerTransfusionSettingsPage.class );
+	SystemManagerTransfusionSettingsPage transfusionsettings =  PageFactory.initElements(IEDriver.ieDriver, SystemManagerTransfusionSettingsPage.class );
 
 	public void selectOptionForDisplayBloodTypeMismatchQuestion(String a)
 	{

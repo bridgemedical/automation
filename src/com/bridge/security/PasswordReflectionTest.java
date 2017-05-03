@@ -1,22 +1,18 @@
 package com.bridge.security;
 
-import org.testng.annotations.Test;
-
-import com.bridge.utilities.CommonFunctions;
-import com.pageObject.Functions.BabyMatchSelectPatientFunctions;
-import com.pageObjects.BabyMatchSelectPatientPage;
-import com.pageObjects.CapribedsideChangePasswordPage;
-import com.pageObjects.CapribedsideLoginPage;
-import com.pageObjects.CapribedsideSelectPatientPage;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-
-import java.nio.charset.Charset;
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.bridge.utilities.CommonFunctions;
+import com.bridge.utilities.IEDriver;
+import com.pageObjects.CapribedsideChangePasswordPage;
+import com.pageObjects.CapribedsideLoginPage;
+import com.pageObjects.CapribedsideSelectPatientPage;
 
 public class PasswordReflectionTest 
 {
@@ -29,6 +25,7 @@ public class PasswordReflectionTest
 	String testuser_new_pwd2 = "wxyz";
 	
 	CommonFunctions common = new CommonFunctions();
+	IEDriver iedriver = new IEDriver();
 	CapribedsideChangePasswordPage changePasswordPage = new CapribedsideChangePasswordPage();
 	CapribedsideLoginPage loginPage = new CapribedsideLoginPage();
 	CapribedsideSelectPatientPage selectPatientPage = new CapribedsideSelectPatientPage();
@@ -52,7 +49,7 @@ public class PasswordReflectionTest
 @Test
   public void passwordReflectionTest() throws InterruptedException 
   {
-	 
+	/* 
 	// Try new user can login to the system
 	  common.login(capribedUrl, testuserid, testuserpwd);
 	  Thread.sleep(2000);  
@@ -84,6 +81,7 @@ public class PasswordReflectionTest
 	  
 	  /*************Baby Match*******************************/
 	// Try new user can login to the system
+	/*
 	      BabyMatchSelectPatientFunctions babyMatchFunctions = new BabyMatchSelectPatientFunctions();
 		  common.login(babymatchurl, testuserid, testuser_new_pwd);
 		  Thread.sleep(2000);  
@@ -114,7 +112,7 @@ public class PasswordReflectionTest
 	  Assert.assertNotEquals(currentURL, babymatchurl);
 	  common.close();
 	
-	  
+	  */
 	  
   }
   

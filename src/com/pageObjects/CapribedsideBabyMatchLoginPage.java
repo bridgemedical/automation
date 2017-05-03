@@ -11,22 +11,22 @@ public class CapribedsideBabyMatchLoginPage extends IEDriver
 	
 	public static WebElement enterUsername()
 	{
-		element  = driver.findElement(By.id("UserId"));
+		element  = ieDriver.findElement(By.id("UserId"));
 		return element;
 	}
 	public static WebElement enterPassword()
 	{
-		element  = driver.findElement(By.id("Password"));
+		element  = ieDriver.findElement(By.id("Password"));
 		return element;
 	}
 	public static WebElement clickOnLoginButton()
 	{
-		element  = driver.findElement(By.id("cmdLogin"));
+		element  = ieDriver.findElement(By.id("cmdLogin"));
 		return element;
 	}
 	public static WebElement clickOnClickHereLink()
 	{
-		element  = driver.findElement(By.id("btnChangePw"));
+		element  = ieDriver.findElement(By.id("btnChangePw"));
 		return element;
 	}
 	

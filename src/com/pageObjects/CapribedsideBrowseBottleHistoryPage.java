@@ -9,7 +9,7 @@ public class CapribedsideBrowseBottleHistoryPage extends IEDriver {
 	
 	public  WebElement button_Back()
 	{
-		element = driver.findElement(By.id("Continue"));
+		element = ieDriver.findElement(By.id("Continue"));
 		return  element;
 	}
 	

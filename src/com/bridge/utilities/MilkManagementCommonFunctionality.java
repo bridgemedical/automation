@@ -25,17 +25,17 @@ public class MilkManagementCommonFunctionality extends IEDriver
 	 
 	 public void patientNotFoundErrorMsg() throws IOException
 	    {
-		 selectPatient = PageFactory.initElements(IEDriver.driver, CapribedsideSelectPatientPage.class );
+		 selectPatient = PageFactory.initElements(IEDriver.ieDriver, CapribedsideSelectPatientPage.class );
 	    	boolean wb = selectPatient.patientNotFoundErrorMsg().isDisplayed();
 	    	if(wb)
 	    	{
 	    		System.out.println("Patient not found.-Is displayed");
-	    		multiScreens.multiScreenShot(iedriver.driver);
+	    		multiScreens.multiScreenShot(iedriver.ieDriver);
 	    	}
 	    	else
 	    	{
 	    		System.out.println("Error message for Patient not found. is not displayed");
-	    		multiScreens.multiScreenShot(iedriver.driver);
+	    		multiScreens.multiScreenShot(iedriver.ieDriver);
 	    	}
 	    	
 	    }
@@ -43,20 +43,21 @@ public class MilkManagementCommonFunctionality extends IEDriver
 	 CapribedsideReceiveBottlesPage receiveBottle;
 	 public void patientNotMatchErrorMsg() throws IOException
 	 {
-		 receiveBottle = PageFactory.initElements(IEDriver.driver, CapribedsideReceiveBottlesPage.class );
+		 receiveBottle = PageFactory.initElements(IEDriver.ieDriver, CapribedsideReceiveBottlesPage.class );
 	    	boolean wb = receiveBottle.patientNotMatchErrorMsg().isDisplayed();
 	    	if(wb)
 	    	{
 	    		System.out.println("The patient ID you entered does not match the patient ID of the current patient..-Is displayed");
-	    		multiScreens.multiScreenShot(iedriver.driver);
+	    		multiScreens.multiScreenShot(iedriver.ieDriver);
 	    	}
 	    	else
 	    	{
 	    		System.out.println("Error message 'The patient ID you entered does not match the patient ID of the current patient'. is not displayed");
-	    		multiScreens.multiScreenShot(iedriver.driver);
+	    		multiScreens.multiScreenShot(iedriver.ieDriver);
 	    	}
 		 
 	 }
+	/* 
 	 public void duplicateBottleErrorMsg() throws IOException
 	 {
 		 receiveBottle = PageFactory.initElements(IEDriver.driver, CapribedsideReceiveBottlesPage.class );
@@ -160,7 +161,7 @@ public class MilkManagementCommonFunctionality extends IEDriver
 	    		  iedriver.extent_Test().log(LogStatus.PASS, "Step 08 Passed");
 	    	}
 		 
-	 }
+	 }*/
 	 
 
 

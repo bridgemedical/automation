@@ -11,10 +11,10 @@ public class DonorMilkReceiveDonorBottlePageFunctions
 {
 	Actions actions;
  
-	DonorMilkReceiveDonorBottlePage donormilkrecievepage = PageFactory.initElements(IEDriver.driver, 	DonorMilkReceiveDonorBottlePage.class );
+	DonorMilkReceiveDonorBottlePage donormilkrecievepage = PageFactory.initElements(IEDriver.ieDriver, 	DonorMilkReceiveDonorBottlePage.class );
 	 public void scanDonorBottleID(String a)  throws InterruptedException
 	 {
-			actions= new Actions(IEDriver.driver);
+			actions= new Actions(IEDriver.ieDriver);
 			actions.keyDown(Keys.ALT).perform(); 
 			donormilkrecievepage.donorBottleNumber().sendKeys("[");
 			//Thread.sleep(1000);

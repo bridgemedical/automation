@@ -27,7 +27,7 @@ public class BloodTransfusionCommonFunctionality extends IEDriver
 	IEDriver iedriver = new IEDriver(FilePath, TestName);
 	
     //String a = "635201";
-    public void scanRacipientPatientID(String a)  throws InterruptedException
+   /* public void scanRacipientPatientID(String a)  throws InterruptedException
     {
     	//iedriver.scanpatient("635201");
     	stTransPage = PageFactory.initElements(IEDriver.driver, 	CapribedsideStartTransfusionPage.class );
@@ -405,7 +405,7 @@ public class BloodTransfusionCommonFunctionality extends IEDriver
 		
 	}
     
-    
+   */ 
     
     
     

@@ -23,7 +23,6 @@ import org.monte.media.Format;
 import org.monte.media.FormatKeys.MediaType;
 import org.monte.media.math.Rational;
 import org.monte.screenrecorder.ScreenRecorder;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,6 +31,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.pageObject.Functions.CapribedsideLoginFunctions;
 import com.pageObject.Functions.SystemManagerUsersPageFunctions;
 import com.pageObjects.CapribedsideLoginPage;
 import com.pageObjects.CapribedsideReceiveBottlesPage;
@@ -39,42 +39,39 @@ import com.pageObjects.CapribedsideSelectPatientPage;
 import com.pageObjects.SystemManagerMainPage;
 import com.pageObjects.SystemManagerUsersPage;
 
-public class CommonFunctions extends IEDriver {
+public class CommonFunctions  {
 
 	String username = "superuser";
 	String password = "123";
-	IEDriver iedriver = new IEDriver();
+	IEDriver ieDriver = new IEDriver();
 	CapribedsideLoginPage login;
 	CapribedsideSelectPatientPage select_page;
 	CapribedsideReceiveBottlesPage rece_page;
 	SystemManagerMainPage sysMain = new SystemManagerMainPage();
 	private static ScreenRecorder screenRecorder;
 
-	public void call_Driver(String URL) throws InterruptedException {
-		iedriver.callDriver(URL);
-	}
+	/*public void call_Driver(String URL) throws InterruptedException {
+		//iedriver.callDriver(URL);
+	}*/
 
-	public WebDriver getCurrentDriver() throws InterruptedException {
+	/*public WebDriver getCurrentDriver() throws InterruptedException {
 
-		return iedriver.getCurrentdriver();
+		return ieDriver.getCurrentdriver();
 
-	}
-
+	}*/
+	CapribedsideLoginFunctions loginFunctions = new CapribedsideLoginFunctions();
 	public void login(String URL, String username, String password) throws InterruptedException {
-		iedriver.callDriver(URL);
-		login = PageFactory.initElements(IEDriver.driver, CapribedsideLoginPage.class);
-		login.txt_box_username().sendKeys(username);
-		login.txt_box_password().clear();
-		login.txt_box_password().sendKeys(password);
-		Thread.sleep(2000);
-		login.button_login().click();
+		//iedriver.callDriver(URL);
+		loginFunctions.enterUserName("Superuser");
+		loginFunctions.enterPassword("123");
+		loginFunctions.clickLoginButton();
 		Thread.sleep(1000);
 	}
 
 	public void scanpatientid(String a) throws InterruptedException {
 
-		select_page = PageFactory.initElements(IEDriver.driver, CapribedsideSelectPatientPage.class);
-		Actions actions = new Actions(driver);
+		select_page = PageFactory.initElements(IEDriver.ieDriver, CapribedsideSelectPatientPage.class);
+		Actions actions = new Actions(ieDriver.iEDriver());
 		actions.keyDown(Keys.ALT).perform();
 		select_page.txt_box_patientid().sendKeys("[");
 		select_page.txt_box_patientid().sendKeys(a);
@@ -113,7 +110,7 @@ public class CommonFunctions extends IEDriver {
 	}
 
 	public void waitForElement(WebElement locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 10000);
+		WebDriverWait wait = new WebDriverWait(IEDriver.ieDriver, 10000);
 		wait.until(ExpectedConditions.visibilityOf(locator));
 	}
 	
@@ -167,18 +164,18 @@ public class CommonFunctions extends IEDriver {
 		userPage.createUserFacility_Default().click();
 		Thread.sleep(1000);
 
-		driver = iedriver.getCurrentdriver();
-		String url = driver.getCurrentUrl();
+		//ieDriver = iedriver.getCurrentdriver();
+		String url = ieDriver.iEDriver().getCurrentUrl();
 
 		userPage.btnConfirm().click();
 		Thread.sleep(2000);
 
-		driver = iedriver.getCurrentdriver();
-		String url2 = driver.getCurrentUrl();
+		//ieDriver = ieDriver.getCurrentdriver();
+		String url2 = ieDriver.iEDriver().getCurrentUrl();
 
 		assertFalse("\n\n cannot create new user " + userid + "\n\n", url.equals(url2));
 		sysmanMenuPage.linkLogout().click();
-		close();
+		//close();
 	}
 
 }

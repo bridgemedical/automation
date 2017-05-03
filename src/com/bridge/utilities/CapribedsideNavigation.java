@@ -33,7 +33,7 @@ public class CapribedsideNavigation extends IEDriver
 		iedriver.extent_Test().log(LogStatus.INFO, "Application launched successfully");
 		//fun.scanpatientid( pat_id);
 		Thread.sleep(1000);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		ieDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    fun.scanpatientid("635201");
 		
 	     
@@ -42,7 +42,7 @@ public class CapribedsideNavigation extends IEDriver
 	 @AfterClass
 	  public void postExecutionTest() 
 	  {
-		 driver.close();
+		 ieDriver.close();
 	  }
 
 }
