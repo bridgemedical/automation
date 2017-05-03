@@ -1,6 +1,5 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -8,89 +7,21 @@ import com.bridge.utilities.IEDriver;
 
 public class SystemManagerMainPage extends IEDriver
 {
-	private  WebElement element = null;
-	
-	
-	public  WebElement button_PointsOfCare()
-	{
-		element  = driver.findElement(By.id("PointsOfCare_cmdButton"));
-		return element;
-	}
-	public  WebElement button_Users( )
-	{
-		element  = driver.findElement(By.id("Users_cmdButton"));
-		return element;
-	}
-	public  WebElement button_Roles()
-	{
-		element  = driver.findElement(By.id("Roles_cmdButton"));
-		return element;
-	}
-	public  WebElement button_SystemMaintenance()
-	{
-		element  = driver.findElement(By.id("Maintenance_cmdButton"));
-		return element;
-	}
-	public  WebElement button_ScheduleDowntime()
-	{
-		element  = driver.findElement(By.id("ScheduleDowntime_cmdButton"));
-		return element;
-	}
-	public  WebElement button_LoginSettings()
-	{
-		element  = driver.findElement(By.id("userLogin_cmdButton"));
-		return element;
-	}
-	public  WebElement button_GeneralSystemSettings()
-	{
-		element  = driver.findElement(By.id("general_cmdButton"));
-		return element;
-	}
-	public  WebElement button_SpecimenSettings()
-	{
-		element  = driver.findElement(By.id("specimen_cmdButton"));
-		return element;
-	}
-	public  WebElement button_TransfusionSettings()
-	{
-		element  = driver.findElement(By.id("transfusion_cmdButton"));
-		return element;
-	}
-	public  WebElement button_BreastMilkSettings()
-	{
-		element  = driver.findElement(By.id("breastMilk_cmdButton"));
-		return element;
-	}
-	public  WebElement button_BabyMatchSettings()
-	{
-		element  = driver.findElement(By.id("babymatch_cmdButton"));
-		return element;
-	}
-	public  WebElement button_PrinterBarcodeSettings()
-	{
-		element  = driver.findElement(By.id("printerBarcode_cmdButton"));
-		return element;
-	}
-	public  WebElement button_InterfaceSettings()
-	{
-		element  = driver.findElement(By.id("SystemInterface_cmdButton"));
-		return element;
-	}
-	public  WebElement button_ReportSettings()
-	{
-		element  = driver.findElement(By.id("reports_cmdButton"));
-		return element;
-	}
-	public  WebElement linkLogout()
-	{
-		element  = driver.findElement(By.id("header_cmdLogout"));
-		return element;
-	}
-	public  WebElement linkHelp()
-	{
-		element  = driver.findElement(By.id("header_cmdHelp"));
-		return element;
-	}
-	
+	@FindBy (id = "PointsOfCare_cmdButton") 	public WebElement buttonPointsOfCare;
+	@FindBy (id = "Users_cmdButton") 			public WebElement buttonUsers;
+	@FindBy (id = "Roles_cmdButton") 			public WebElement buttonRoles;
+	@FindBy (id = "Maintenance_cmdButton") 		public WebElement buttonSystemMaintenance;
+	@FindBy (id = "ScheduleDowntime_cmdButton") public WebElement button_ScheduleDowntime;
+	@FindBy (id = "userLogin_cmdButton") 		public WebElement buttonLoginSettings;
+	@FindBy (id = "general_cmdButton") 			public WebElement buttonGeneralcmd;
+	@FindBy (id = "specimen_cmdButton") 		public WebElement buttonSpecimenSettings;
+	@FindBy (id = "transfusion_cmdButton") 		public WebElement buttonTransfusionSettings;
+	@FindBy (id = "breastMilk_cmdButton") 		public WebElement buttonBreastMilkSettings;
+	@FindBy (id = "babymatch_cmdButton") 		public WebElement buttonBabyMatchSettings;
+	@FindBy (id = "printerBarcode_cmdButton") 	public WebElement buttonPrinterBarcodeSettings;
+	@FindBy (id = "SystemInterface_cmdButton") 	public WebElement buttonInterfaceSettings;
+	@FindBy (id = "reports_cmdButton") 			public WebElement buttonReportSettings;
+	@FindBy (id = "header_cmdLogout") 			public WebElement linkLogout;
+	@FindBy (id = "header_cmdHelp") 			public WebElement linkHelp;
 	
 }

@@ -145,36 +145,36 @@ public class CommonFunctions  {
 		SystemManagerUsersPageFunctions userpagefunctions = new SystemManagerUsersPageFunctions();
 		login(sysManURL, "superuser", "123");
 		Thread.sleep(2000);
-		sysmanMenuPage.button_Users().click();
+		sysmanMenuPage.buttonUsers.click();
 		Thread.sleep(2000);
-		userPage.linkCreateUser().click();
+		userPage.linkCreateUser.click();
 		Thread.sleep(2000);
-		userPage.createUserFName().sendKeys(fName);
-		userPage.createUserLName().sendKeys(lName);
-		userPage.createUserUserId().sendKeys(userid);
-		userPage.createUserInitials().sendKeys(initial);
-		userPage.createUsertxtAlias().sendKeys(alias);
-		userPage.createUserPassword().sendKeys(password);
-		userPage.createUserConfirmPassword().sendKeys(password);
+		userPage.createUserFName.sendKeys(fName);
+		userPage.createUserLName.sendKeys(lName);
+		userPage.createUserUserId.sendKeys(userid);
+		userPage.createUserInitials.sendKeys(initial);
+		userPage.createUsertxtAlias.sendKeys(alias);
+		userPage.createUserPassword.sendKeys(password);
+		userPage.createUserConfirmPassword.sendKeys(password);
 		userpagefunctions.selectCreateUserRole(role);
 		userpagefunctions.selectBabyMatchRecipient("yes");
 		Thread.sleep(1000);
-		userPage.btnConfirm().click();
+		userPage.buttonConfirm.click();
 		Thread.sleep(1000);
-		userPage.createUserFacility_Default().click();
+		userPage.createUserFacility_Default.click();
 		Thread.sleep(1000);
 
 		//ieDriver = iedriver.getCurrentdriver();
 		String url = ieDriver.iEDriver().getCurrentUrl();
 
-		userPage.btnConfirm().click();
+		userPage.buttonConfirm.click();
 		Thread.sleep(2000);
 
 		//ieDriver = ieDriver.getCurrentdriver();
 		String url2 = ieDriver.iEDriver().getCurrentUrl();
 
 		assertFalse("\n\n cannot create new user " + userid + "\n\n", url.equals(url2));
-		sysmanMenuPage.linkLogout().click();
+		sysmanMenuPage.linkLogout.click();
 		//close();
 	}
 

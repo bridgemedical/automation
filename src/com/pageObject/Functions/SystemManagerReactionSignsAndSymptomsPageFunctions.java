@@ -12,13 +12,13 @@ public class SystemManagerReactionSignsAndSymptomsPageFunctions
 
 	public void createReactionSignsAndSymptoms(String signName,String description) throws Throwable
 	{
-		reactionsignspage.linkCreateReactionSigns().click();
+		reactionsignspage.linkCreateReactionSigns.click();
 		Thread.sleep(2000);
-		reactionsignspage.textBoxDescriptionCreateReactionSigns().sendKeys(signName);
+		reactionsignspage.textBoxDescriptionCreateReactionSigns.sendKeys(signName);
 		Thread.sleep(2000);
-		reactionsignspage.textBoxDescriptionCreateReactionSigns().sendKeys(description);
+		reactionsignspage.textBoxDescriptionCreateReactionSigns.sendKeys(description);
 		Thread.sleep(2000);
-		reactionsignspage.buttonConfirmCreateReactionSigns().click();
+		reactionsignspage.submitCreateReactionSigns.click();
 		Thread.sleep(2000);
 	}
 }
