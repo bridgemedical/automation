@@ -15,21 +15,21 @@ public class SystemManagerTransfusionSettingsPageFunctions
 
 	public void selectOptionForDisplayBloodTypeMismatchQuestion(String a)
 	{
-		element = transfusionsettings.displayBloodTypeMismatchQuestion();
+		element = transfusionsettings.displayBloodTypeMismatchQuestion;
     	sel = new Select(element);
     	sel.selectByValue(a);
 	}
 
 	public void selectOptionForPropmtForPatientBloodType(String a)
 	{
-		element = transfusionsettings.propmtForPatientBloodType();
+		element = transfusionsettings.propmtForPatientBloodType;
     	sel = new Select(element);
     	sel.selectByVisibleText(a);
 	}
 	
 	public void selectOptionForExpirationMessage(String a)
 	{
-		element = transfusionsettings.expirationMessage();
+		element = transfusionsettings.expirationMessage;
     	sel = new Select(element);
     	sel.selectByValue(a);
 	}

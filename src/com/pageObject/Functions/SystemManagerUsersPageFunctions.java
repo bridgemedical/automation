@@ -13,14 +13,14 @@ public class SystemManagerUsersPageFunctions
 	WebElement element;
  	public void selectCreateUserRole(String s)
 	{
- 		element = userspage.userRole();
+ 		element = userspage.userRole;
 	   	sel = new Select(element);
 	   	sel.selectByVisibleText(s);
  	}
  	
     public void selectBabyMatchRecipient(String s)
    	{
-    	element = userspage.babyMatchRecipient();
+    	element = userspage.babyMatchRecipient;
     	sel = new Select(element);
     	sel.selectByVisibleText(s);
    	}

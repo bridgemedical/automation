@@ -11,14 +11,13 @@ public class SystemManagerReactionInstructionPageFunctions
 			
 	public void createReactionInstruction(String reactionName,String description) throws Throwable
 	{
-		reactioninstrpage.linkCreateReactionInstruction().click();
+		reactioninstrpage.linkCreateReactionInstruction.click();
 		Thread.sleep(2000);
-		reactioninstrpage.textBoxNameCreateReactionInstruction().sendKeys(reactionName);
+		reactioninstrpage.textBoxNameOfReactionInstruction.sendKeys(reactionName);
 		Thread.sleep(2000);
-		reactioninstrpage.textBoxDescriptionCreateReactionInstruction().sendKeys(description);
+		reactioninstrpage.textBoxDescriptionReactionInstruction.sendKeys(description);
 		Thread.sleep(2000);
-		reactioninstrpage.buttonConfirmCreateReactionInstruction().click();
-		
+		reactioninstrpage.submitReactionInstruction.click();
 	}
 
 }

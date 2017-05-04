@@ -1,49 +1,42 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.bridge.utilities.IEDriver;
 
 public class SystemManagerPointsOfCarePage extends IEDriver
 {
-	private static WebElement element = null;
-	public static WebElement editPocPeds()
-	{
-		element  = driver.findElement(By.id("dlPoc__ctl13_editLink"));
-		return element;
+	@FindBy (id = "dlPoc__ctl13_editLink") 			public WebElement editPocPeds;
+	@FindBy (id = "dlPoc__ctl10_editLink") 			public WebElement editPocGenMed;
+	@FindBy (id = "listSearch_txtSearchList") 		public WebElement txt_box_SearchPOC;
+	@FindBy (id = "listSearch_imgSearchList") 		public WebElement button_Searchbutton;
+	@FindBy (id = "cmdCreate") 						public WebElement buttonCreate;
+	@FindBy (id = "cmdOK") 							public WebElement buttonSubmit;
+	@FindBy (id = "dlPoc__ctl13_editLink") 			public WebElement linkEditPeds;
+	
+	
+	public WebElement getEditPocPeds() {
+		return editPocPeds;
 	}
-	public static WebElement editPocGenMed()
-	{
-		element  = driver.findElement(By.id("dlPoc__ctl10_editLink"));
-		return element;
+	public WebElement getEditPocGenMed() {
+		return editPocGenMed;
 	}
-	public static WebElement txt_box_SearchPOC()
-	{
-		element  = driver.findElement(By.id("listSearch_txtSearchList"));
-		return element;
+	public WebElement getTxt_box_SearchPOC() {
+		return txt_box_SearchPOC;
 	}
-	public static WebElement button_Searchbutton()
-	{
-		element  = driver.findElement(By.id("listSearch_imgSearchList"));
-		return element;
+	public WebElement getButton_Searchbutton() {
+		return button_Searchbutton;
 	}
-	public static WebElement button_Create()
-	{
-		element  = driver.findElement(By.id("cmdCreate"));
-		return element;
+	public WebElement getButtonCreate() {
+		return buttonCreate;
 	}
-	public static WebElement button_Back()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
+	public WebElement getButtonSubmit() {
+		return buttonSubmit;
 	}
-	public static WebElement linkEditPeds()
-	{
-		element  = driver.findElement(By.id("dlPoc__ctl13_editLink"));
-		return element;
+	public WebElement getLinkEditPeds() {
+		return linkEditPeds;
 	}
 	
-
-
+	
 }
