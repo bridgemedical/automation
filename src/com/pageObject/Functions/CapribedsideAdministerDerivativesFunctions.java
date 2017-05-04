@@ -18,9 +18,11 @@ public class CapribedsideAdministerDerivativesFunctions {
 			CapribedsideAdministerDerivativesPage.class);
 
 	// Method to select blood plasma derivative.
-	public void selectBloodPlasmaDerivative(String bloodPlasmaDerivative) {
-		commonFunctions.waitForElement(administerpage.bloodPlasmaDerivativeDropDown);
+	public void selectBloodPlasmaDerivative(String bloodPlasmaDerivative) 
+	{
 		try {
+			commonFunctions.waitForElement(administerpage.bloodPlasmaDerivativeDropDown);
+		
 			seleniumFunctions.selectValueByVisibleText(administerpage.getBloodPlasmaDerivativeDropDown(),
 					bloodPlasmaDerivative);
 		} catch (Exception e) {

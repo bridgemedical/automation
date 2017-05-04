@@ -24,4 +24,54 @@ public class SystemManagerMainPage extends IEDriver
 	@FindBy (id = "header_cmdLogout") 			public WebElement linkLogout;
 	@FindBy (id = "header_cmdHelp") 			public WebElement linkHelp;
 	
+	public WebElement getButtonPointsOfCare() {
+		return buttonPointsOfCare;
+	}
+	public WebElement getButtonUsers() {
+		return buttonUsers;
+	}
+	public WebElement getButtonRoles() {
+		return buttonRoles;
+	}
+	public WebElement getButtonSystemMaintenance() {
+		return buttonSystemMaintenance;
+	}
+	public WebElement getButton_ScheduleDowntime() {
+		return button_ScheduleDowntime;
+	}
+	public WebElement getButtonLoginSettings() {
+		return buttonLoginSettings;
+	}
+	public WebElement getButtonGeneralcmd() {
+		return buttonGeneralcmd;
+	}
+	public WebElement getButtonSpecimenSettings() {
+		return buttonSpecimenSettings;
+	}
+	public WebElement getButtonTransfusionSettings() {
+		return buttonTransfusionSettings;
+	}
+	public WebElement getButtonBreastMilkSettings() {
+		return buttonBreastMilkSettings;
+	}
+	public WebElement getButtonBabyMatchSettings() {
+		return buttonBabyMatchSettings;
+	}
+	public WebElement getButtonPrinterBarcodeSettings() {
+		return buttonPrinterBarcodeSettings;
+	}
+	public WebElement getButtonInterfaceSettings() {
+		return buttonInterfaceSettings;
+	}
+	public WebElement getButtonReportSettings() {
+		return buttonReportSettings;
+	}
+	public WebElement getLinkLogout() {
+		return linkLogout;
+	}
+	public WebElement getLinkHelp() {
+		return linkHelp;
+	}
+	
+	
 }

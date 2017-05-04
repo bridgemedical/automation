@@ -15,4 +15,28 @@ public class SystemManagerPointsOfCarePage extends IEDriver
 	@FindBy (id = "cmdOK") 							public WebElement buttonSubmit;
 	@FindBy (id = "dlPoc__ctl13_editLink") 			public WebElement linkEditPeds;
 	
+	
+	public WebElement getEditPocPeds() {
+		return editPocPeds;
+	}
+	public WebElement getEditPocGenMed() {
+		return editPocGenMed;
+	}
+	public WebElement getTxt_box_SearchPOC() {
+		return txt_box_SearchPOC;
+	}
+	public WebElement getButton_Searchbutton() {
+		return button_Searchbutton;
+	}
+	public WebElement getButtonCreate() {
+		return buttonCreate;
+	}
+	public WebElement getButtonSubmit() {
+		return buttonSubmit;
+	}
+	public WebElement getLinkEditPeds() {
+		return linkEditPeds;
+	}
+	
+	
 }
