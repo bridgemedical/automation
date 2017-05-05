@@ -1,96 +1,105 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
+public class CapribedsideBabyMatchPage
 
-public class CapribedsideBabyMatchPage extends IEDriver
+{
 
-{  
-	private static WebElement element = null;
-	public static WebElement scanPatientID()
-	{
-		element  = driver.findElement(By.id("txtPatientId"));
-		return element;
+	@FindBy(id = "txtPatientId")
+	public WebElement patientIDTextBox;
+
+	public WebElement getPatientIDTextBox() {
+		return patientIDTextBox;
 	}
-	public static WebElement scanRacipientID()
-	{
-		element  = driver.findElement(By.id("txtRecipientId"));
-		return element;
+
+	@FindBy(id = "txtRecipientId")
+	public WebElement racipientIDTextBox;
+
+	public WebElement getRacipientIDTextBox() {
+		return racipientIDTextBox;
 	}
-	
-	public static WebElement clickContinueButton()
-	{
-		element  = driver.findElement(By.id("Continue"));
-		return element;
-		
+
+	@FindBy(id = "Continue")
+	public WebElement continueButton;
+
+	public WebElement getContinueButton() {
+		return continueButton;
 	}
-	public static WebElement clickCancelButton()
-	{
-		element  = driver.findElement(By.id("cmdCancel"));
-		return element;
-		
+
+	@FindBy(id = "modalConfirm_cmdOK")
+	public WebElement confirmButtonFromPopup;
+
+	public WebElement getConfirmButtonFromPopup() {
+		return confirmButtonFromPopup;
 	}
-	public static WebElement clickOnConfirmPopupButton()
-	{
-		element  = driver.findElement(By.id("modalConfirm_cmdOK"));
-		return element;
-		
+
+	@FindBy(id = "modalErrorConfirm_title")
+	public WebElement titleMatchFailedPopup;
+
+	public WebElement getTitleMatchFailedPopup() {
+		return titleMatchFailedPopup;
 	}
-	public static WebElement invaliIdAlertMessage()
-	{
-		element  = driver.findElement(By.id("BabyMatchEvent_PatientId"));
-		return element;
-		
+
+	@FindBy(id = "header_cmdManagePatientLink")
+	public WebElement managePatientInfoLink;
+
+	public WebElement getManagePatientInfoLink() {
+		return managePatientInfoLink;
 	}
-	public static WebElement matchFailedPopup()
-	{
-		element  = driver.findElement(By.id("modalErrorConfirm_title"));
-		return element;
-		
+
+	@FindBy(id = "lstToLocation")
+	public WebElement toLocationDropDown;
+
+	public WebElement getToLocationDropDown() {
+		return toLocationDropDown;
 	}
-	public static WebElement matchFailedPopupAckButton()
-	{
-		element  = driver.findElement(By.id("modalErrorConfirm_cmdButton1"));
-		return element;
-		
+
+	@FindBy(id = "lstFromLocation")
+	public WebElement fromLocationDropDown;
+
+	public WebElement getFromLocationDropDown() {
+		return fromLocationDropDown;
 	}
-	public static WebElement managePatientInfoLink()
-	{
-		element  = driver.findElement(By.id("header_cmdManagePatientLink"));
-		return element;
-		
+
+	@FindBy(id = "cmdCancel")
+	public WebElement cancelButton;
+
+	public WebElement getCancelButton() {
+		return cancelButton;
 	}
-	public static WebElement invalidMatchPopup()
-	{
-		element  = driver.findElement(By.id("modalErrorConfirm_title"));
-		return element;
-		
+
+	@FindBy(id = "BabyMatchEvent_PatientId")
+	public WebElement invalidIDAlertMessage;
+
+	public WebElement getInvalidIDAlertMessage() {
+		return invalidIDAlertMessage;
 	}
-	public static WebElement invalidMatchPopupAckButton()
-	{
-		element  = driver.findElement(By.id("modalErrorConfirm_cmdButton1"));
-		return element;
-		
+
+	@FindBy(id = "modalErrorConfirm_cmdButton1")
+	public WebElement acknowledgeButtonMatchFailedPopup;
+
+	public WebElement getAcknowledgeButtonMatchFailedPopup() {
+		return acknowledgeButtonMatchFailedPopup;
 	}
-	public static WebElement fromLocationDropDown()
-	{
-		element  = driver.findElement(By.id("lstFromLocation"));
-		return element;
-		
+
+	/*
+	 * public static WebElement invalidMatchPopup() { element =
+	 * driver.findElement(By.id("modalErrorConfirm_title")); return element;
+	 * 
+	 * } public static WebElement invalidMatchPopupAckButton() { element =
+	 * driver.findElement(By.id("modalErrorConfirm_cmdButton1")); return
+	 * element;
+	 * 
+	 * }
+	 */
+
+	@FindBy(id = "header_cmdLogout")
+	public WebElement logoutLink;
+
+	public WebElement getLogoutLink() {
+		return logoutLink;
 	}
-	public static WebElement toLocationDropDown()
-	{
-		element  = driver.findElement(By.id("lstToLocation"));
-		return element;
-		
-	}
-	
-	public WebElement linkLogOut()
-	{
-		element  = driver.findElement(By.id("header_cmdLogout"));
-		return element;
-		
-	}
+
 }

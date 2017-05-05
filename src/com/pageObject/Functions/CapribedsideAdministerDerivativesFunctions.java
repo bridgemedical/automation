@@ -246,7 +246,7 @@ public class CapribedsideAdministerDerivativesFunctions {
 
 	}
 	/*
-	 * Method to click logout link from header 
+	 * Method to click Yes from Logout Popup 
 	 */
 	public void clickYesFromLogoutConfim() {
 		commonFunctions.waitForElement(administerpage.getLinkLogOut());
@@ -254,6 +254,19 @@ public class CapribedsideAdministerDerivativesFunctions {
 			administerpage.getLinkLogOut().click();
 		} catch (Exception e) {
 			System.out.print("CapribedsideAdministerDerivativesFunctions-clickLogoutLink :Method is failed");
+
+		}
+
+	}
+	/*
+	 * Method to click No from Logout Popup 
+	 */
+	public void clickNoFromLogoutConfim() {
+		try {
+			commonFunctions.waitForElement(administerpage.getLogOutPopupNoButton());
+			administerpage.getLogOutPopupNoButton().click();
+		} catch (Exception e) {
+			System.out.print("CapribedsideAdministerDerivativesFunctions-clickNoFromLogoutConfim :Method is failed");
 
 		}
 

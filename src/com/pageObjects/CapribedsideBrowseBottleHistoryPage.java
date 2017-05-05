@@ -1,47 +1,27 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import com.bridge.utilities.IEDriver;
+import org.openqa.selenium.support.FindBy;
 
-public class CapribedsideBrowseBottleHistoryPage extends IEDriver {
-	private  WebElement element = null;
+public class CapribedsideBrowseBottleHistoryPage {
 	
-	public  WebElement button_Back()
-	{
-		element = ieDriver.findElement(By.id("Continue"));
-		return  element;
-	}
+	@FindBy(id="Continue")
+	public WebElement backButton;
 	
-	public  WebElement sortReceivedColumn()
-	{
-		element = driver.findElement(By.xpath("//input[@class='sorted']"));
-		return  element;
-	}
+	@FindBy(xpath="//input[@class='sorted']")
+	public WebElement sortReceivedColumnLink;
 	
-	public  WebElement verifyDevidedBottle()
-	{		
-		element = driver.findElement(By.xpath("a[@href='BrowseBottlePrepPanel.aspx?id=25035364368397']"));
-		return  element;
-	}
+	@FindBy(xpath="a[@href='BrowseBottlePrepPanel.aspx?id=25035364368397']")
+	public WebElement verifyDividedBottleLink;
 	
-	public  WebElement editDevidedBottle()
-	{
-		element = driver.findElement(By.id("dlBottleHistory__ctl2_btnCorrectBottles"));
-		return  element;
-	}
+	@FindBy(id="dlBottleHistory__ctl2_btnCorrectBottles")
+	public WebElement editDevidedBottleLink;
 	
-	public  WebElement finalStatusFilter()
-	{
-		element = driver.findElement(By.id("FinalStatusFilter"));
-		return  element;
-	}
+	@FindBy(id="FinalStatusFilter")
+	public WebElement finalStatusFilter;
 	
 	
-	public  WebElement storageStateFilter()
-	{
-		element = driver.findElement(By.id("StorageStateFilter"));
-		return  element;
-	}
-	
+	@FindBy(id="StorageStateFilter")
+	public WebElement storageStateFilter;
+		
 }
