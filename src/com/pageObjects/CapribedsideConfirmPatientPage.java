@@ -1,29 +1,17 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
+public class CapribedsideConfirmPatientPage {
 
-public class CapribedsideConfirmPatientPage extends IEDriver
-{
-	private  WebElement element = null;
+	@FindBy(id = "txtPatientId")
+	public WebElement confirmPatientIdTextbox;
 
-	public  WebElement confirmPatientID()
-	{
-		element  = driver.findElement(By.id("txtPatientId"));
-		return element;
-	}
-	public  WebElement continueButton()
-	{
-		
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public  WebElement exitButton()
-	{
-		
-		element  = driver.findElement(By.id("cmdCancel"));
-		return element;
-	}
+	@FindBy(id = "cmdOK")
+	public WebElement continueButton;
+
+	@FindBy(id = "cmdCancel")
+	public WebElement exitButton;
+
 }

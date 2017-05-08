@@ -1,56 +1,40 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
-public class CapribedsideChangeBloodTypePage extends IEDriver
+public class CapribedsideChangeBloodTypePage 
 {
-	private  WebElement element = null;
-	public  WebElement newBloodType()
-	{
-		element  = driver.findElement(By.id("lstNewBloodType"));
-		return element;
-	}
-	public  WebElement confirmNewBloodType()
-	{
-		element  = driver.findElement(By.id("lstConfirmedBloodType"));
-		return element;
-	}
-	public  WebElement reasonForBloodTypeChange()
-	{
-		element  = driver.findElement(By.id("lstReasonForChange"));
-		return element;
-	}
 	
-	public  WebElement textBoxUserID()
-	{
-		element  = driver.findElement(By.id("txtLoginId"));
-		return element;
-	}
-	public  WebElement textBoxPassword()
-	{
-		element  = driver.findElement(By.id("txtPassword"));
-		return element;
-	}
-	public  WebElement btnConfirm()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public  WebElement btnExit()
-	{
-		element  = driver.findElement(By.id("cmdCancel"));
-		return element;
-	}
-	public  WebElement currentBloodType()
-	{
-		element  = driver.findElement(By.id("lblBloodtype_Details"));
-		return element;
-	}
+	@FindBy (id="lstNewBloodType")
+	public WebElement newBloodTypeTextbox;
+	
+	
+	@FindBy (id="lstConfirmedBloodType")
+	public WebElement confirmNewBloodTypeTextbox;
+	
+	
+	@FindBy (id="lstReasonForChange")
+	public WebElement reasonForBloodTypeChangeDropdown;
+
+	@FindBy (id="txtLoginId")
+	public WebElement userIDTextbox;
+	
+	@FindBy (id="txtPassword")
+	public WebElement passwordTextbox;
+	
+	@FindBy (id="cmdOK")
+	public WebElement confirmButton;
+	
+	@FindBy (id="cmdCancel")
+	public WebElement exitButton;
+	
+	@FindBy (id="lblBloodtype_Details")
+	public WebElement currentBloodTypeTextBox;
+	
+	
 	//Logout Process
-	public  WebElement linkLogout()
+/*	public  WebElement linkLogout()
 	{
 		element  = driver.findElement(By.id("header_cmdLogout"));
 		return element;
@@ -65,6 +49,6 @@ public class CapribedsideChangeBloodTypePage extends IEDriver
 	{
 		element  = driver.findElement(By.id("header__modalConfirm_cmdCancel"));
 		return element;
-	}
+	}*/
 
 }

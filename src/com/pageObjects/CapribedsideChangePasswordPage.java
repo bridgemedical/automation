@@ -1,43 +1,26 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
+public class CapribedsideChangePasswordPage  {
 
-public class CapribedsideChangePasswordPage extends IEDriver {
+	@FindBy(id = "UserId")
+	public WebElement currentUserIDTextbox;
 
-	private  WebElement element = null;
+	@FindBy(id = "Password")
+	public WebElement currentPasswordIDTextbox;
 
-	public  WebElement currentUserID()
-	{
-		element  = driver.findElement(By.id("UserId"));
-		return element;
-	}
-	public  WebElement currentPassword()
-	{
-		element  = driver.findElement(By.id("Password"));
-		return element;
-	}
-	public  WebElement newPassword()
-	{
-		element  = driver.findElement(By.id("NewPassword"));
-		return element;
-	}
-	public  WebElement newConfirmPassword()
-	{
-		element  = driver.findElement(By.id("ConfirmPassword"));
-		return element;
-	}
-	
-	public  WebElement buttonOK()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public  WebElement buttonCancel()
-	{
-		element  = driver.findElement(By.id("cmdCancel"));
-		return element;
-	}
+	@FindBy(id = "NewPassword")
+	public WebElement newPasswordTextbox;
+
+	@FindBy(id = "ConfirmPassword")
+	public WebElement confirmPasswordTextbox;
+
+	@FindBy(id = "cmdOK")
+	public WebElement OkButton;
+
+	@FindBy(id = "cmdCancel")
+	public WebElement cancelButton;
+
 }
