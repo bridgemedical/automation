@@ -1,12 +1,9 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
-public class SystemManagerUsersPage extends IEDriver 
+public class SystemManagerUsersPage 
 {
 
 	

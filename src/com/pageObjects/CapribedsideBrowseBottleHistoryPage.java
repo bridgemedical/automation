@@ -11,8 +11,8 @@ public class CapribedsideBrowseBottleHistoryPage {
 	@FindBy(xpath="//input[@class='sorted']")
 	public WebElement sortReceivedColumnLink;
 	
-	@FindBy(xpath="a[@href='BrowseBottlePrepPanel.aspx?id=25035364368397']")
-	public WebElement verifyDividedBottleLink;
+	/*@FindBy(xpath="a[@href='BrowseBottlePrepPanel.aspx?id=25035364368397']")
+	public WebElement verifyDividedBottleLink;*/
 	
 	@FindBy(id="dlBottleHistory__ctl2_btnCorrectBottles")
 	public WebElement editDevidedBottleLink;

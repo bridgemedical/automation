@@ -1,10 +1,8 @@
 package com.pageObjects;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-
-import com.bridge.utilities.IEDriver;;
-public class SystemManagerLoginPage extends IEDriver 
+import org.openqa.selenium.support.FindBy;;
+public class SystemManagerLoginPage
 {
 	@FindBy (id = "UserId") 		public WebElement textboxUsername;
 	@FindBy (id = "Password") 		public WebElement textboxPassword;

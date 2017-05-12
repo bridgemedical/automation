@@ -3,9 +3,7 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
-public class SystemManagerReactionInstructionPage extends IEDriver
+public class SystemManagerReactionInstructionPage 
 {
 	@FindBy (id = "cmdCreate") 			public WebElement linkCreateReactionInstruction;
 	@FindBy (id = "txtValue") 			public WebElement textBoxNameOfReactionInstruction;

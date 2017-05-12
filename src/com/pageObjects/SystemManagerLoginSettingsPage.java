@@ -3,9 +3,7 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
-public class SystemManagerLoginSettingsPage extends IEDriver
+public class SystemManagerLoginSettingsPage 
 {
 	@FindBy (id = "lstPasswordExpiration") 	public WebElement forceChangePassword;
 	@FindBy (id = "cmdOK") 					public WebElement buttonConfirm;

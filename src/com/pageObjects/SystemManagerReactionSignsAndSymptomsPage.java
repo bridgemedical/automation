@@ -3,9 +3,7 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
-public class SystemManagerReactionSignsAndSymptomsPage extends IEDriver 
+public class SystemManagerReactionSignsAndSymptomsPage 
 {
 	
 	@FindBy (id = "cmdCreate") 			public WebElement linkCreateReactionSigns;

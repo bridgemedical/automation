@@ -3,9 +3,7 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
-public class SystemManagerBarcodeTypePage extends IEDriver
+public class SystemManagerBarcodeTypePage
 {
 	@FindBy (id = "dlItems__ctl10_editLink") 	public WebElement editLinkPatientIDWristband;
 	@FindBy (id = "txtExtra") 					public WebElement textboxPrefix;
