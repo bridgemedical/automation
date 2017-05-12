@@ -15,14 +15,14 @@ public class CapribedsideBrowseBottleHistoryPageFunctions {
 	
 	public  Select dropDwn_FinalStatus()
 	{
-		element = browsebottlehistory.finalStatusFilter();
+		element = browsebottlehistory.finalStatusFilter;
 		drop  = new Select(element);
 		return  drop;
 }
 	
 	public  Select dropDwn_StorageState()
 	{
-		element = browsebottlehistory.storageStateFilter();
+		element = browsebottlehistory.storageStateFilter;
 		drop  = new Select(element);
 		return  drop;
 }

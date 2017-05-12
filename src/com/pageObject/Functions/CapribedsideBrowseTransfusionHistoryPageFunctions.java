@@ -15,7 +15,7 @@ public class CapribedsideBrowseTransfusionHistoryPageFunctions {
 	
 	public void selectBloodProductEditTrans(int a)
 	{
-		element = browsetranshistorypage.bloodProduct();
+		element = browsetranshistorypage.bloodProductDropDown;
     	sel = new Select(element);
     	sel.selectByIndex(a);
 	}
