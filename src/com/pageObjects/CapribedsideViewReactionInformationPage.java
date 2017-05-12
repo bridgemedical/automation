@@ -1,23 +1,15 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
+public class CapribedsideViewReactionInformationPage {
 
-public class CapribedsideViewReactionInformationPage extends IEDriver
-{
-	private static WebElement element = null;
-	//Blood Type Chnage Reasons
-	public static WebElement buttonBack()
-		{
-			element  = driver.findElement(By.id("Button_Cancel"));
-			return element;
-		}
+	// Blood Type Chnage Reasons
+	@FindBy(id = "Button_Cancel")
+	public WebElement backButton;
 
-	public WebElement linkLogout()
-	{
-		element  = driver.findElement(By.id("header_cmdLogout"));
-		return element;
-	}
+	@FindBy(id = "header_cmdLogout")
+	public WebElement linkLogout;
+
 }

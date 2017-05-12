@@ -1,134 +1,79 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
+public class CapribedsidePatientMainPage {
 
-public class CapribedsidePatientMainPage extends IEDriver {
-	private static   WebElement element = null;
-	public  static WebElement button_ReceiveBottles()
-	{
-		element  = driver.findElement(By.id("cmdReceiveBottles_cmdButton"));
-		return element;
-	}
-	public  WebElement button_StateChange()
-	{
-		element  = driver.findElement(By.id("cmdStateChangeBottles_cmdButton"));
-		return element;
-	}
-	public  WebElement button_CombineBottles()
-	{
-		element  = driver.findElement(By.id("cmdCombineBottles_cmdButton"));
-		return element;
-	}
-	public   WebElement button_PrepareBottles()
-	{
-		element  = driver.findElement(By.id("cmdPrepareBottles_cmdButton"));
-		return element;
-	}
-	public   WebElement button_AdministerBottles()
-	{
-		element  = driver.findElement(By.id("cmdDispenseBottles_cmdButton"));
-		return element;
-	}
-	public  WebElement button_PrintLabels()
-	{
-		element  = driver.findElement(By.id("cmdPrintMilkLabels_cmdButton"));
-		return element;
-	}
-	public   WebElement button_DischargeBottles()
-	{
-		element  = driver.findElement(By.id("cmdDischargeBottles_cmdButton"));
-		return element;
-	}
-	public   WebElement button_BrowseBottleHistory()
-	{
-		element  = driver.findElement(By.id("cmdBrowseBottleHistory_cmdButton"));
-		return element;
-	}
-	public  WebElement button_ManagePatientInformation()
-	{
-		element  = driver.findElement(By.id("cmdManagePatientInformation_cmdButton"));
-		return element;
-	}
-	public  WebElement button_logout()
-	{
-		element  = driver.findElement(By.id("header_cmdLogout"));
-		return element;
-	}
-	//Blood TransfusionMenuElements
-	public  WebElement startTransfusionButton()
-	{
-		element  = driver.findElement(By.id("cmdStartTransfusion_cmdButton"));
-		return element;
-	}
-	public  WebElement holdTransfusionButton()
-	{
-		element  = driver.findElement(By.id("cmdHoldTransfusion_cmdButton"));
-		return element;
-	}
-	public  WebElement endTransfusionButton()
-	{
-		element  = driver.findElement(By.id("cmdEndTransfusion_cmdButton"));
-		return element;
-	}
-	public  WebElement rapidStartTransfusionButton()
-	{
-		element  = driver.findElement(By.id("cmdRapidStartTransfusion_cmdButton"));
-		return element;
-	}
-	public  WebElement administerDerivativeButton()
-	{
-		element  = driver.findElement(By.id("cmdAdministerDerivative_cmdButton"));
-		return element;
-	}
-	public  WebElement browseTransfusinHistoryButton()
-	{
-		element  = driver.findElement(By.id("cmdBrowseTransfusions_cmdButton"));
-		return element;
-	}
-	//cmdBrowseTransfusions_cmdButtonDisabled
-	public  WebElement buttonDitheredRrowseTransfusinHistory()
-	{
-		element  = driver.findElement(By.id("cmdBrowseTransfusions_cmdButtonDisabled"));
-		return element;
-	}
-	public  WebElement viewReactionInformationButton()
-	{
-		element  = driver.findElement(By.id("cmdViewReactionInstructions_cmdButton"));
-		return element;
-	}
-	public  WebElement changeBloodTypeButton()
-	{
-		element  = driver.findElement(By.id("cmdChangeBloodType_cmdButton"));
-		return element;
-	}
-	public  WebElement changePatientButton()
-	{
-		element  = driver.findElement(By.id("PatientDetails_cmdChangePatient"));
-		return element;
-	}
-	
-	//Collect Specimen Elements
-	public  WebElement buttonCollectSpecimens()
-	{
-		element  = driver.findElement(By.id("cmdCollectSpecimens_cmdButton"));
-		return element;
-	}
+	@FindBy(id = "cmdReceiveBottles_cmdButton")
+	public WebElement receiveBottlesButton;
 
-	
-	//Logout
-	public WebElement linkLogout()
-	{
-		element  = driver.findElement(By.id("header_cmdLogout"));
-		return element;
-	}
-	
-	public WebElement confirmLogoutOKButton()
-	{
-		element  = driver.findElement(By.id("header__modalConfirm_cmdOK"));
-		return element;
-	}
+	@FindBy(id = "cmdStateChangeBottles_cmdButton")
+	public WebElement stateChangeButton;
+
+	@FindBy(id = "cmdCombineBottles_cmdButton")
+	public WebElement combineBottlesButton;
+
+	@FindBy(id = "cmdPrepareBottles_cmdButton")
+	public WebElement prepareBottlesButton;
+
+	@FindBy(id = "cmdDispenseBottles_cmdButton")
+	public WebElement administerBottlesButton;
+
+	@FindBy(id = "cmdPrintMilkLabels_cmdButton")
+	public WebElement printLabelsButton;
+
+	@FindBy(id = "cmdDischargeBottles_cmdButton")
+	public WebElement dischargeBottlesButton;
+
+	@FindBy(id = "cmdBrowseBottleHistory_cmdButton")
+	public WebElement browseBottleHistoryButton;
+
+	@FindBy(id = "cmdManagePatientInformation_cmdButton")
+	public WebElement managePatientInformationButton;
+
+	// Blood TransfusionMenuElements
+	@FindBy(id = "cmdStartTransfusion_cmdButton")
+	public WebElement startTransfusionButton;
+
+	@FindBy(id = "cmdHoldTransfusion_cmdButton")
+	public WebElement holdTransfusionButton;
+
+	@FindBy(id = "cmdEndTransfusion_cmdButton")
+	public WebElement endTransfusionButton;
+
+	@FindBy(id = "cmdRapidStartTransfusion_cmdButton")
+	public WebElement rapidStartTransfusionButton;
+
+	@FindBy(id = "cmdAdministerDerivative_cmdButton")
+	public WebElement administerDerivativeButton;
+
+	@FindBy(id = "cmdBrowseTransfusions_cmdButton")
+	public WebElement browseTransfusionHistoryButton;
+
+	// cmdBrowseTransfusions_cmdButtonDisabled
+	@FindBy(id = "cmdBrowseTransfusions_cmdButtonDisabled")
+	public WebElement ditheredRrowseTransfusinHistoryButton;
+
+	@FindBy(id = "cmdViewReactionInstructions_cmdButton")
+	public WebElement viewReactionInformationButton;
+
+	@FindBy(id = "cmdChangeBloodType_cmdButton")
+	public WebElement changeBloodTypeButton;
+
+	@FindBy(id = "PatientDetails_cmdChangePatient")
+	public WebElement changePatientButton;
+
+	// Collect Specimen Elements
+	@FindBy(id = "cmdCollectSpecimens_cmdButton")
+	public WebElement collectSpecimensButton;
+
+	// Logout
+
+	@FindBy(id = "header_cmdLogout")
+	public WebElement logoutLink;
+
+	@FindBy(id = "header__modalConfirm_cmdOK")
+	public WebElement confirmLogoutOKButton;
 
 }

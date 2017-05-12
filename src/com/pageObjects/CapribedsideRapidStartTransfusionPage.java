@@ -1,180 +1,108 @@
 
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
+public class CapribedsideRapidStartTransfusionPage {
 
-import com.bridge.utilities.IEDriver;
+	// Donor Page Element
+	@FindBy(id = "lstCenterCode")
+	public WebElement donorCenterCodeDropdown;
 
-public class CapribedsideRapidStartTransfusionPage  extends IEDriver
-{
-	private static WebElement element = null;
-	//Donor Page Element
-	public  WebElement donorCenterCode()
-	{
-		element  = driver.findElement(By.id("lstCenterCode"));
-		return element;
-	}
-	
-	public  WebElement donorUnitNumber()
-	{
-		element  = driver.findElement(By.id("txtUnitNumber"));
-		return element;
-	}
-		
-	public  WebElement donorBloodProductDropDown()
-	{
-		element  = driver.findElement(By.id("lstBloodProduct"));
-		return element;
-	}
-	public  WebElement bloodProductAttribute()
-	{
-		element  = driver.findElement(By.id("lblAttributes"));
-		return element;
-	}
-	public  WebElement checkBoxBloodProductAttributeAntiCMVNegative()
-	{
-		element  = driver.findElement(By.id("grdAttributes__ctl3_checkboxSelect"));
-		return element;
-	}
-	public  WebElement checkBoxBloodProductAttributeIrradiated()
-	{
-		element  = driver.findElement(By.id("grdAttributes__ctl4_checkboxSelect"));
-		return element;
-	}
-	public  WebElement buttonSaveBloodAttribute()
-	{
-		element  = driver.findElement(By.id("cmdSave"));
-		return element;
-	}
-	public  WebElement donorBloodProductExipreDate()
-	{
-		element  = driver.findElement(By.id("dpExpirationDate_foo"));
-		return element;
-	}
-	
-	public WebElement donorBloodTypeDropDown()
-	{
-		element  = driver.findElement(By.id("lstBloodType"));
-		return element;
-	}
+	@FindBy(id = "txtUnitNumber")
+	public WebElement donorUnitNumberTextbox;
 
-	public  WebElement donorComments()
-	{
-		element  = driver.findElement(By.id("txtStartTxComment"));
-		return element;
-	}
-	public  WebElement donorContinueButton()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public  WebElement donorExitButton()
-	{
-		element  = driver.findElement(By.id("cmdCancel"));
-		return element;
-	}
-	//Donor Page Hazards
-	public  WebElement errMsgDonorBloodTypeIsNotAllowedForPatient()
-	{
-		element  = driver.findElement(By.id("StartTransfusionEvent_BloodType"));
-		return element;
-	}
-	public  WebElement popupBloodTypeMissMatch()
-	{
-		element  = driver.findElement(By.id("_modalErrorConfirm_lblTitleHeader"));
-		return element;
-	}
-	public  WebElement btnYesDonorBloodTypeMissMatchPopup()
-	{
-		element  = driver.findElement(By.id("_modalErrorConfirm_cmdOK"));
-		return element;
-	}
-	public  WebElement btnNoDonorBloodTypeMissMatchPopup()
-	{
-		element  = driver.findElement(By.id("_modalErrorConfirm_cmdCancel"));
-		return element;
-	}
-	
-	//Cosign Page
-	public  WebElement cosignUserIdTextBox()
-	{
-		element  = driver.findElement(By.id("txtLoginId"));
-		return element;
-	}
-	public  WebElement cosignPasswordTextBox()
-	{
-		element  = driver.findElement(By.id("txtPassword"));
-		return element;
-	}
-	public  WebElement btnCosignContinue()
-	{
-		element  = driver.findElement(By.id("Continue"));
-		return element;
-	}
-	public  WebElement btnCosignExit()
-	{
-		element  = driver.findElement(By.id("cmdCancel"));
-		return element;
-	}
-	//Cosign Page Hazard
-	public  WebElement errMsgCosignUserIdOrPasswordInvalid()
-	{
-		element  = driver.findElement(By.id("User_LoginId"));
-		return element;
-	}
-	
-	//Rapid Start Star Page.
-	public  WebElement buttonStartRapidTransfusion()
-	{
-		element  = driver.findElement(By.id("cmdOK"));
-		return element;
-	}
-	public  WebElement buttonExitRapidTransfusion()
-	{
-		element  = driver.findElement(By.id("cmdCancel"));
-		return element;
-	}
-	
-	//Rapid Start Print Page.
-	public WebElement buttonPrintRapidTransfusionReport()
-	{
-		element  = driver.findElement(By.id("btnPrint"));
-		return element;
-	}
-	public  WebElement buttonCancelRapidTransfusionReport()
-	{
-		element  = driver.findElement(By.id("btnReturn"));
-		return element;
-	}
-	
-	
-	//Logout process
-	public static WebElement linkLogout()
-	{
-		element  = driver.findElement(By.id("header_cmdLogout"));
-		return element;
-	}
-	
-	public static WebElement btnYesLogoutPopup()
-	{
-		element  = driver.findElement(By.id("header__modalConfirm_cmdOK"));
-		return element;
-	}
-	public WebElement btnNoLogoutPopup()
-	{
-		element  = driver.findElement(By.id("header__modalConfirm_cmdCancel"));
-		return element;
-	}
-	
-	//Logout method
-	public void logoutRapidTransfusion() throws Throwable
-	{
-		CapribedsideRapidStartTransfusionPage.linkLogout().click();
-		Thread.sleep(2000);
-		CapribedsideRapidStartTransfusionPage.btnYesLogoutPopup().click();
-				
-	}
+	@FindBy(id = "lstBloodProduct")
+	public WebElement donorBloodProductDropDown;
+
+	@FindBy(id = "lblAttributes")
+	public WebElement bloodProductAttribute;
+
+	@FindBy(id = "grdAttributes__ctl3_checkboxSelect")
+	public WebElement antiCMVNegativeBloodProductAttributeCheckbox;
+
+	@FindBy(id = "grdAttributes__ctl4_checkboxSelect")
+	public WebElement irradiatedBloodProductAttributeCheckbox;
+
+	@FindBy(id = "cmdSave")
+	public WebElement saveBloodAttributeButton;
+
+	@FindBy(id = "dpExpirationDate_foo")
+	public WebElement donorBloodProductExipreDateTextbox;
+
+	@FindBy(id = "lstBloodType")
+	public WebElement donorBloodTypeDropDown;
+
+	@FindBy(id = "txtStartTxComment")
+	public WebElement donorComments;
+
+	@FindBy(id = "cmdOK")
+	public WebElement donorContinueButton;
+
+	@FindBy(id = "cmdCancel")
+	public WebElement donorExitButton;
+	// Donor Page Hazards
+	@FindBy(id = "StartTransfusionEvent_BloodType")
+	public WebElement donorBloodTypeIsNotAllowedForPatientErrorMessage;
+
+	@FindBy(id = "_modalErrorConfirm_lblTitleHeader")
+	public WebElement bloodTypeMissmatchPopup;
+
+	@FindBy(id = "_modalErrorConfirm_cmdOK")
+	public WebElement yesButtonDonorBloodTypeMissMatchPopup;
+
+	@FindBy(id = "_modalErrorConfirm_cmdCancel")
+	public WebElement noButtonDonorBloodTypeMissMatchPopup;
+
+	// Cosign Page
+	@FindBy(id = "txtLoginId")
+	public WebElement cosignUserIdTextBox;
+
+	@FindBy(id = "txtPassword")
+	public WebElement cosignPasswordTextBox;
+
+	@FindBy(id = "Continue")
+	public WebElement cosignContinueButton;
+
+	@FindBy(id = "cmdCancel")
+	public WebElement cosignExitButton;
+
+	// Cosign Page Hazard
+	@FindBy(id = "User_LoginId")
+	public WebElement cosignUserIdOrPasswordInvalidErrorMessage;
+
+	// Rapid Start Star Page.
+	@FindBy(id = "cmdOK")
+	public WebElement startRapidTransfusionButton;
+
+	@FindBy(id = "cmdCancel")
+	public WebElement exitRapidTransfusionButton;
+
+	// Rapid Start Print Page.
+	@FindBy(id = "btnPrint")
+	public WebElement printRapidTransfusionReportButton;
+
+	@FindBy(id = "btnReturn")
+	public WebElement cancelPrintRapidTransfusionReportButton;
+
+	// Logout process
+	@FindBy(id = "header_cmdLogout")
+	public WebElement logoutLink;
+
+	@FindBy(id = "header__modalConfirm_cmdOK")
+	public WebElement yesButtonLogoutPopup;
+
+	@FindBy(id = "header__modalConfirm_cmdCancel")
+	public WebElement noButtonLogoutPopup;
+
+	/*
+	 * //Logout method public void logoutRapidTransfusion() throws Throwable {
+	 * CapribedsideRapidStartTransfusionPage.linkLogout().click();
+	 * Thread.sleep(2000);
+	 * CapribedsideRapidStartTransfusionPage.btnYesLogoutPopup().click();
+	 * 
+	 * }
+	 */
 
 }
