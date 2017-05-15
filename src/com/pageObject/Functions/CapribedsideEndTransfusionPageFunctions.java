@@ -1,18 +1,19 @@
 package com.pageObject.Functions;
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
+import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
+import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideEndTransfusionPage;
 
 public class CapribedsideEndTransfusionPageFunctions {
-	
+	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
+	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideEndTransfusionPage endtransfusionpage = PageFactory.initElements(IEDriver.ieDriver, CapribedsideEndTransfusionPage.class );
-	private WebElement element = null;
-	Select sel;
-	public void selectBlodProduct(int a)
+
+	
+/*	public void selectBlodProduct(int a)
 	{
 		element = endtransfusionpage.dropDownBloodProduct();
 	   	sel = new Select(element);
@@ -32,5 +33,5 @@ public class CapribedsideEndTransfusionPageFunctions {
     	sel = new Select(element);
     	sel.selectByIndex(a);
     	
-    }
+    }*/
 }
