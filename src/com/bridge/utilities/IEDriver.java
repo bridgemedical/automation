@@ -18,49 +18,10 @@ public class IEDriver {
 	ExtentReports extent;
 	ExtentTest test;
 	String URL;
-	/*
-	 * public void callDriver(String URL) throws InterruptedException{
-	 * 
-	 * System.setProperty("webdriver.ie.driver",
-	 * "C:/IEDriverServer_Win32_2.53.0/IEDriverServer.exe"); driver = new
-	 * InternetExplorerDriver(); driver.navigate().to(URL); Thread.sleep(1000);
-	 * driver.manage().window().maximize();
-	 * 
-	 * 
-	 * 
-	 * }
-	 */
-
+	
 	public IEDriver() {
 
 	}
-
-	/*public IEDriver(String FilePath, String TestName) {
-
-		extent = new ExtentReports(FilePath, false);
-		test = extent.startTest(TestName);
-
-	}
-
-	public ExtentReports extent_Reports() {
-
-		return extent;
-
-	}
-
-	public ExtentTest extent_Test() {
-
-		// test = extent.startTest(TestName);
-		return test;
-	}
-
-	public void close() {
-		ieDriver.close();
-	}
-
-	public WebDriver getCurrentdriver() {
-		return ieDriver;
-	}*/
 
 	public IEDriver(String URL) {
 
@@ -75,9 +36,7 @@ public class IEDriver {
 		ieDriver = new InternetExplorerDriver();
 		ieDriver.navigate().to(URL);
 		ieDriver.manage().window().maximize();
-
 		return ieDriver;
-
 	}
 
 }
