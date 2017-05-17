@@ -3,8 +3,6 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
 public class SystemManagerBloodProductPage 
 {
 	@FindBy (id = "dlItems__ctl6_editLink") 	public WebElement editLinkForCRT;
