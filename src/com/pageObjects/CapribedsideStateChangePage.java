@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 public class CapribedsideStateChangePage {
 
 	@FindBy(id = "txtBottleNumber")
-	public WebElement bottleNumbertextbox;
+	public WebElement bottleNumberTextbox;
 
 	@FindBy(id = "cmdCancel")
 	public WebElement exitButton;
@@ -15,7 +15,7 @@ public class CapribedsideStateChangePage {
 	public WebElement warningBottleMayNotBeChangedForThisPatient;
 
 	@FindBy(id = "modalErrorConfirm_cmdButton3")
-	public WebElement ackButtonBottleMayNotBezChangedForThisPatientPopup;
+	public WebElement acknowledgeButtonBottleMayNotBeChangedForThisPatientPopup;
 
 	@FindBy(id = "errorLabel")
 	public WebElement bottleNotReceivedErrorMessage;

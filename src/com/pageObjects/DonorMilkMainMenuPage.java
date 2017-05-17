@@ -3,7 +3,7 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class DonorMilkMainPage {
+public class DonorMilkMainMenuPage {
 
 	@FindBy(id = "cmdReceiveBottles_cmdButton")
 	public WebElement receiveDonorBottleButton;
@@ -36,7 +36,7 @@ public class DonorMilkMainPage {
 	public WebElement homeLink;
 
 	@FindBy(id = "header_cmdLogout")
-	public WebElement logOutLink;
+	public WebElement logoutLink;
 
 	@FindBy(id = "header_cmdHelp")
 	public WebElement helpLink;

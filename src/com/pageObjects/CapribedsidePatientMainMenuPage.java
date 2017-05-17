@@ -3,7 +3,7 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CapribedsidePatientMainPage {
+public class CapribedsidePatientMainMenuPage {
 
 	@FindBy(id = "cmdReceiveBottles_cmdButton")
 	public WebElement receiveBottlesButton;

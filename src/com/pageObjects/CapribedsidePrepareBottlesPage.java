@@ -24,7 +24,7 @@ public class CapribedsidePrepareBottlesPage {
 	public WebElement cancelFortifiersCheckbox;
 
 	@FindBy(id = "cbDispose")
-	public WebElement disposeTextbox;
+	public WebElement disposeCheckbox;
 
 	@FindBy(id = "cbReprintLabel")
 	public WebElement reprintLableCheckbox;
@@ -52,10 +52,10 @@ public class CapribedsidePrepareBottlesPage {
 	public WebElement donorWarningPopup;
 
 	@FindBy(id = "modalErrorConfirm_cmdButton1")
-	public WebElement yesButtondonorWarningPopup;
+	public WebElement yesButtonDonorWarningPopup;
 
 	@FindBy(id = "modalErrorConfirm_cmdCancel")
-	public WebElement noButtondonorWarningPopup;
+	public WebElement noButtonDonorWarningPopup;
 
 	@FindBy(id = "errorLabel")
 	public WebElement bottleNotReceivedErrorMessage;

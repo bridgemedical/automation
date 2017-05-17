@@ -45,7 +45,7 @@ public class CapribedsideStartTransfusionPage {
 	public WebElement recipientUnitDivisionNumberTextbox;
 
 	@FindBy(id = "lstBloodType")
-	public WebElement racipientBloodTypeDropDown;
+	public WebElement recipientBloodTypeDropDown;
 
 	@FindBy(id = "txtPatientComment")
 	public WebElement recipientCommentTextBox;
