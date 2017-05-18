@@ -1,20 +1,6 @@
 package com.bridge.utilities;
 
-import java.io.IOException;
-
-import org.openqa.selenium.support.PageFactory;
-
-import com.pageObjects.CapribedsideAdministerBottlesPage;
-import com.pageObjects.CapribedsideCombineBottlesPage;
-import com.pageObjects.CapribedsideDischargeBottlesPage;
-import com.pageObjects.CapribedsideReceiveBottlesPage;
-import com.pageObjects.CapribedsideSelectPatientPage;
-import com.pageObjects.CapribedsideStateChangePage;
-import com.relevantcodes.extentreports.LogStatus;
-
-import multiScreenShot.MultiScreenShot;
-
-public class MilkManagementCommonFunctionality extends IEDriver
+public class MilkManagementCommonFunctionality 
 
 {
 	/*CapribedsideSelectPatientPage selectPatient;

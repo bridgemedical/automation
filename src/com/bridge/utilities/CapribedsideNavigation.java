@@ -1,16 +1,8 @@
 package com.bridge.utilities;
 
-import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 
-import com.pageObjects.CapribedsideAdministerBottlesPage;
-import com.relevantcodes.extentreports.LogStatus;
-
-import multiScreenShot.MultiScreenShot;
-
-public class CapribedsideNavigation extends IEDriver
+public class CapribedsideNavigation 
 {
 	/* String FilePath = "C:\\Temp\\Sayyad.html";
 	 String TestName = "Recive Bottle";
@@ -42,7 +34,7 @@ public class CapribedsideNavigation extends IEDriver
 	 @AfterClass
 	  public void postExecutionTest() 
 	  {
-		 ieDriver.close();
+		 //ieDriver.close();
 	  }
 
 }

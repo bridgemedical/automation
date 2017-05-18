@@ -1,24 +1,10 @@
 package com.bridge.utilities;
 
-import java.io.IOException;
-
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-
-import com.pageObject.Functions.CapribedsideStartTransfusionPageFunctions;
-import com.pageObjects.CapribedsideChangeBloodTypePage;
-import com.pageObjects.CapribedsideLoginPage;
-import com.pageObjects.CapribedsidePatientMainPage;
-import com.pageObjects.CapribedsideRapidStartTransfusionPage;
 import com.pageObjects.CapribedsideStartTransfusionPage;
-import com.pageObjects.SystemManagerMainPage;
 
 import multiScreenShot.MultiScreenShot;
 
-public class BloodTransfusionCommonFunctionality extends IEDriver
+public class BloodTransfusionCommonFunctionality 
 {
 	CapribedsideStartTransfusionPage stTransPage;
 	String FilePath = "C:\\Temp\\BloodTransfusionCommonFunctionality.html";

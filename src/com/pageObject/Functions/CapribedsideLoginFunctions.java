@@ -2,21 +2,17 @@ package com.pageObject.Functions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.bridge.utilities.CommonFunctions;
+import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
+import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideLoginPage;
 
 public class CapribedsideLoginFunctions
 {
-	//CapribedsideLoginPage login;
-	//CommonFunctions commonFunctions = new CommonFunctions();
-	String URL = "http://10.162.106.174/TransSpec2017010102/CapriBedside/Login.aspx";
-	//CapribedsideLoginPage login;// = PageFactory.initElements(IEDriver.driver, CapribedsideLoginPage.class);
-//	public CapribedsideLoginFunctions(IEDriver iedriver)
-//	{
-//		PageFactory.initElements(iedriver.driver,CapribedsideLoginPage.class);
-//	}
-	IEDriver ieDriver = new IEDriver(URL);
+	//Constants constants = new Constants();
+	//String URL = "http://10.162.106.174/TransSpec2017010102/CapriBedside/Login.aspx";
+	SeleniumFunctions seleniumFunction = new SeleniumFunctions();
+	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideLoginPage login = PageFactory.initElements(IEDriver.ieDriver, CapribedsideLoginPage.class);
 	
 	/*
@@ -26,8 +22,8 @@ public class CapribedsideLoginFunctions
 	   // try {
 			//commonFunctions.waitForElement(login.getUserName());
 			login.getUserName().clear();
-			//login.userName.sendKeys(userName);
-			login.getUserName().sendKeys(userName);
+			login.userName.sendKeys(userName);
+			//login.getUserName().sendKeys(userName);
 		
 		// } 
 	    //catch (Exception e) {
@@ -39,7 +35,7 @@ public class CapribedsideLoginFunctions
 	 */
 	public void enterPassword(String password) {
 		try {
-			//commonFunctions.waitForElement(login.getPassword());
+			seleniumFunction.waitForElement(login.getPassword());
 			login.getPassword().clear();
 			login.getPassword().sendKeys(password);
 		} catch (Exception e) {

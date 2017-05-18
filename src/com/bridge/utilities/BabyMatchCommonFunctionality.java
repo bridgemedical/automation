@@ -1,16 +1,8 @@
 package com.bridge.utilities;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
-
-import com.pageObject.Functions.BabyMatchSelectPatientFunctions;
-import com.pageObjects.BabyMatchSelectPatientPage;
-import com.pageObjects.CapribedsideBabyMatchPage;
-
-public class BabyMatchCommonFunctionality extends IEDriver
+public class BabyMatchCommonFunctionality 
 {
-	  CapribedsideBabyMatchPage babyMatchPage;
+	 // CapribedsideBabyMatchPage babyMatchPage;
 	    //String a = "635201";
 	  /*
 	    public void scanBabyMatchPatients(String a)  throws InterruptedException

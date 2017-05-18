@@ -3,9 +3,7 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
-public class SystemManagerPointsOfCarePage extends IEDriver
+public class SystemManagerPointsOfCarePage 
 {
 	@FindBy (id = "dlPoc__ctl13_editLink") 			public WebElement editPocPeds;
 	@FindBy (id = "dlPoc__ctl10_editLink") 			public WebElement editPocGenMed;

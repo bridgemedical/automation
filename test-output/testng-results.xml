@@ -2,12 +2,22 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="13731" started-at="2017-05-15T14:01:59Z" finished-at="2017-05-15T14:02:13Z">
+=======
+  <suite name="Default suite" duration-ms="8445" started-at="2017-05-12T06:00:03Z" finished-at="2017-05-12T06:00:11Z">
+>>>>>>> branch 'master' of https://github.com/bridgemedical/automation.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="13731" started-at="2017-05-15T14:01:59Z" finished-at="2017-05-15T14:02:13Z">
       <class name="Test.TestSystemManager">
         <test-method status="PASS" signature="f()[pri:0, instance:Test.TestSystemManager@7c16905e]" name="f" duration-ms="13580" started-at="2017-05-15T19:31:59Z" finished-at="2017-05-15T19:32:13Z">
+=======
+    <test name="Default test" duration-ms="8445" started-at="2017-05-12T06:00:03Z" finished-at="2017-05-12T06:00:11Z">
+      <class name="Test.LaunchBridgeMedicalTest">
+        <test-method status="PASS" signature="bridgeMedicalLoginTest()[pri:0, instance:Test.LaunchBridgeMedicalTest@7c16905e]" name="bridgeMedicalLoginTest" duration-ms="8405" started-at="2017-05-12T11:30:03Z" finished-at="2017-05-12T11:30:11Z">
+>>>>>>> branch 'master' of https://github.com/bridgemedical/automation.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->

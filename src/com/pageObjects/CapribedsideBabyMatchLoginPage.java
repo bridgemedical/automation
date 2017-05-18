@@ -7,6 +7,10 @@ import com.bridge.utilities.IEDriver;
 
 public class CapribedsideBabyMatchLoginPage extends IEDriver
 {
+	public CapribedsideBabyMatchLoginPage(String URL) {
+		super(URL);
+		// TODO Auto-generated constructor stub
+	}
 	private static WebElement element=null;
 	
 	public static WebElement enterUsername()

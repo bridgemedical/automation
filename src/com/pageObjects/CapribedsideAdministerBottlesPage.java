@@ -3,11 +3,9 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
+public class CapribedsideAdministerBottlesPage  {
 
-public class CapribedsideAdministerBottlesPage extends IEDriver {
-
-	// private static WebElement element = null;
+	
 
 	@FindBy(id = "txtBottleNumber")
 	public WebElement bottleNumberTextBox;

@@ -43,7 +43,7 @@ public class CommonFunctions  {
 
 	String username = "superuser";
 	String password = "123";
-	IEDriver ieDriver = new IEDriver();
+	IEDriver ieDriver = new IEDriver(null);
 	CapribedsideLoginPage login;
 	CapribedsideSelectPatientPage select_page;
 	CapribedsideReceiveBottlesPage rece_page;
@@ -68,7 +68,7 @@ public class CommonFunctions  {
 		Thread.sleep(1000);
 	}
 
-	public void scanpatientid(String a) throws InterruptedException {
+	/*public void scanpatientid(String a) throws InterruptedException {
 
 		select_page = PageFactory.initElements(IEDriver.ieDriver, CapribedsideSelectPatientPage.class);
 		Actions actions = new Actions(ieDriver.iEDriver());
@@ -79,7 +79,7 @@ public class CommonFunctions  {
 		select_page.txt_box_patientid().sendKeys("]");
 		Thread.sleep(1000);
 	}
-
+*/
 	public String uniqueNumber(int a) {
 
 		SimpleDateFormat date1 = new SimpleDateFormat("yyyyddMMHHmm");// ("MM/dd/yyyy

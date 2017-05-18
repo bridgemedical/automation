@@ -3,9 +3,7 @@ package com.pageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.bridge.utilities.IEDriver;
-
-public class SystemManagerTransfusionSettingsPage extends IEDriver
+public class SystemManagerTransfusionSettingsPage 
 {
 
 	@FindBy (id = "txtDisplayStartedTransDays") 	public WebElement displayPreviouslyStartedUnitsInHoldAndEndWithinTheLast;
