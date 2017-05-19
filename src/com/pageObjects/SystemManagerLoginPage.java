@@ -1,12 +1,38 @@
 package com.pageObjects;
 
 import org.openqa.selenium.WebElement;
+<<<<<<< HEAD
+import org.openqa.selenium.support.FindBy;
+
+import com.bridge.utilities.IEDriver;;
+public class SystemManagerLoginPage 
+=======
 import org.openqa.selenium.support.FindBy;;
 public class SystemManagerLoginPage
+>>>>>>> branch 'master' of https://github.com/bridgemedical/automation.git
 {
 	@FindBy (id = "UserId") 		public WebElement textboxUsername;
 	@FindBy (id = "Password") 		public WebElement textboxPassword;
-	@FindBy (id = "cmdLogin") 		public WebElement buttonLogin;
+	@FindBy (id = "cmdLogin") 		public WebElement buttonSubmit;
 	@FindBy (id = "errorsLabel") 	public WebElement labelErrorText;
-
+	
+	public WebElement getTextboxUsername() {
+		return textboxUsername;
+	}
+	public void setTextboxUsername(WebElement textboxUsername) {
+		this.textboxUsername = textboxUsername;
+	}
+	public WebElement getTextboxPassword() {
+		return textboxPassword;
+	}
+	public void setTextboxPassword(WebElement textboxPassword) {
+		this.textboxPassword = textboxPassword;
+	}
+	public WebElement getButtonSubmit() {
+		return buttonSubmit;
+	}
+	public void setButtonSubmit(WebElement buttonSubmit) {
+		this.buttonSubmit = buttonSubmit;
+	}
+	
 }

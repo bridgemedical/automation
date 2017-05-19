@@ -25,6 +25,5 @@ public class SeleniumFunctions {
 	public void waitForElement(WebElement locator) {
 		WebDriverWait wait = new WebDriverWait(IEDriver.ieDriver, 10000);
 		wait.until(ExpectedConditions.visibilityOf(locator));
-	}
-
+	} 
 }
