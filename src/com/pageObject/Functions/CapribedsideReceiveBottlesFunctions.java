@@ -1,5 +1,7 @@
 package com.pageObject.Functions;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
@@ -23,6 +25,17 @@ public class CapribedsideReceiveBottlesFunctions {
 			System.out.println("CapribedsideReceiveBottlesFunctions: enterPatientId method Failed " + e);
 		}
 
+	}
+	public void scanpatientid(String patientID) throws InterruptedException {
+
+		//select_page = PageFactory.initElements(IEDriver.ieDriver, CapribedsideSelectPatientPage.class);
+		Actions actions = new Actions(ieDriver.iEDriver());
+		actions.keyDown(Keys.ALT).perform();
+		receiveBottlesPage.bottlePatientIdTextbox.sendKeys("[");
+		receiveBottlesPage.bottlePatientIdTextbox.sendKeys(patientID);
+		actions.keyDown(Keys.ALT).perform();
+		receiveBottlesPage.bottlePatientIdTextbox.sendKeys("]");
+		Thread.sleep(1000);
 	}
 	public void clickYesButtonBottleNumberWarningPopup() {
 		try {
