@@ -1,15 +1,9 @@
 package com.pageObjects;
 
 import org.openqa.selenium.WebElement;
-<<<<<<< HEAD
 import org.openqa.selenium.support.FindBy;
-
-import com.bridge.utilities.IEDriver;;
 public class SystemManagerLoginPage 
-=======
-import org.openqa.selenium.support.FindBy;;
-public class SystemManagerLoginPage
->>>>>>> branch 'master' of https://github.com/bridgemedical/automation.git
+
 {
 	@FindBy (id = "UserId") 		public WebElement textboxUsername;
 	@FindBy (id = "Password") 		public WebElement textboxPassword;

@@ -15,7 +15,7 @@ public class SystemManagerBreastMilkSettingsPageFunctions
 			
 	public void selectFreshExpTimeUnit(String a) throws InterruptedException
     {
-		element= breastmailsettingspage.textBoxFreshExpTimeLengthUnits;
+		element= breastmailsettingspage.textboxFreshExpLengthUnits;
     	sel = new Select(element);
     	sel.selectByVisibleText(a);	
     }
