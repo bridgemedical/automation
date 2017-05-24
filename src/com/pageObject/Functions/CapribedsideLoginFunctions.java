@@ -64,5 +64,11 @@ public class CapribedsideLoginFunctions
 			System.out.println("CapribedsideLoginFunctions-clickOnClickHereLink : Mathod is failed" + e);
 		}
 	}
+	
+	public void adminLogin(){
+		enterUserName(Constants.ADMIN_USERNAME);
+		enterPassword(Constants.ADMIN_PASSWORD);
+		clickLoginButton();
+	}
 
 }

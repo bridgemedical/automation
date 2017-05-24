@@ -13,12 +13,56 @@ public class DonorMilkFormulaPrintLabelsPageFunction
 	
 	public void clickSelectForifierButton()
 	{
-	 try {
+		try {
 			seleniumFunctions.waitForElement(printFormulaLabel.selectFortifierButton);
-			printFormulaLabel.firstFortifiercheckbox.click();
+			printFormulaLabel.selectFortifierButton.click();
 		} catch (Exception e) {
-			System.out.println("Cannot select First Fortifier button"+e);
+			System.out.println("Failed to click on fortifier button : "+e);
 		}
 	}
+
+	public void clickFirstFortifiercheckbox()
+	{
+		seleniumFunctions.waitForElement(printFormulaLabel.firstFortifiercheckbox);
+		printFormulaLabel.firstFortifiercheckbox.click();
+	}
+		
+	public void selectFirstFortifierExpDate()
+	{
+		seleniumFunctions.waitForElement(printFormulaLabel.firstFortExpTextBox);
+		printFormulaLabel.firstFortExpTextBox.click();
+		seleniumFunctions.waitForElement(printFormulaLabel.firstFortDateSelectorPopup);
+		printFormulaLabel.firstFortExpDateSelection.click();
+		assert(printFormulaLabel.firstFortExpTextBox.getText()!=null);
+	}
+	
+	public void clickSecondFortifiercheckbox()
+	{
+		seleniumFunctions.waitForElement(printFormulaLabel.secondFortifiercheckbox);
+		printFormulaLabel.firstFortifiercheckbox.click();
+	}
+	
+	public void writeSecondFortifierLotTextbox(String lotNumber)
+	{
+		seleniumFunctions.waitForElement(printFormulaLabel.SecondFortLottextbox);
+		printFormulaLabel.SecondFortLottextbox.sendKeys(lotNumber);
+	}
+	
+
+	public void clickThirdFortifierCheckbox()
+	{
+		seleniumFunctions.waitForElement(printFormulaLabel.thirdFortifierCheckbox);
+		printFormulaLabel.thirdFortifierCheckbox.click();
+	}
+	
+	public void selectThirdFortifierExpDate()
+	{
+		seleniumFunctions.waitForElement(printFormulaLabel.thirdFortExpTextbox);
+		printFormulaLabel.thirdFortExpTextbox.click();
+		seleniumFunctions.waitForElement(printFormulaLabel.thirdFortDateSelectorPopup);
+		printFormulaLabel.thirdFortExpDateSelection.click();
+		assert(printFormulaLabel.thirdFortExpDateSelection.getText()!=null);
+	}
+	
 	
 }

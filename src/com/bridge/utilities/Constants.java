@@ -21,6 +21,10 @@ public class Constants {
     public static final String capribedsideUrl ="http://10.162.106.174/TransSpec2017010102/CapriBedside/Login.aspx";
     public static final String systemManagerUrl ="http://10.162.106.174/TransSpec2017010102/systemmanager/Login.aspx";
     public static final String babyMatchUrl ="http://10.162.106.174/TransSpec2017010102/babymatch/Login.aspx";
+    public static final String ADMIN_USERNAME 						="superuser";
+    public static final String ADMIN_PASSWORD						="123";
+    
+    
 }
 
 

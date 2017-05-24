@@ -1,27 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="13731" started-at="2017-05-15T14:01:59Z" finished-at="2017-05-15T14:02:13Z">
-=======
-  <suite name="Default suite" duration-ms="8445" started-at="2017-05-12T06:00:03Z" finished-at="2017-05-12T06:00:11Z">
->>>>>>> branch 'master' of https://github.com/bridgemedical/automation.git
+  <suite name="Default suite" duration-ms="6668" started-at="2017-05-24T12:44:26Z" finished-at="2017-05-24T12:44:33Z">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="13731" started-at="2017-05-15T14:01:59Z" finished-at="2017-05-15T14:02:13Z">
-      <class name="Test.TestSystemManager">
-        <test-method status="PASS" signature="f()[pri:0, instance:Test.TestSystemManager@7c16905e]" name="f" duration-ms="13580" started-at="2017-05-15T19:31:59Z" finished-at="2017-05-15T19:32:13Z">
-=======
-    <test name="Default test" duration-ms="8445" started-at="2017-05-12T06:00:03Z" finished-at="2017-05-12T06:00:11Z">
-      <class name="Test.LaunchBridgeMedicalTest">
-        <test-method status="PASS" signature="bridgeMedicalLoginTest()[pri:0, instance:Test.LaunchBridgeMedicalTest@7c16905e]" name="bridgeMedicalLoginTest" duration-ms="8405" started-at="2017-05-12T11:30:03Z" finished-at="2017-05-12T11:30:11Z">
->>>>>>> branch 'master' of https://github.com/bridgemedical/automation.git
+    <test name="Default test" duration-ms="6668" started-at="2017-05-24T12:44:26Z" finished-at="2017-05-24T12:44:33Z">
+      <class name="Test.BedsideBreastMilkLotExpForFortifiersTest">
+        <test-method status="FAIL" signature="test()[pri:0, instance:Test.BedsideBreastMilkLotExpForFortifiersTest@7c16905e]" name="test" duration-ms="6569" started-at="2017-05-24T18:14:26Z" finished-at="2017-05-24T18:14:33Z">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 800705AF ('The paging file is too small for this operation to complete.') for URL 'http://localhost:43711/' (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.46 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'WIN7DX64-02644', ip: '10.171.200.118', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Unexpected error launching Internet Explorer. IELaunchURL() returned HRESULT 800705AF ('The paging file is too small for this operation to complete.') for URL 'http://localhost:43711/' (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.46 seconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'WIN7DX64-02644', ip: '10.171.200.118', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:182)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:174)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:146)
+	at com.bridge.utilities.IEDriver.iEDriver(IEDriver.java:68)
+	at com.bridge.utilities.IEDriver.<init>(IEDriver.java:61)
+	at com.pageObject.Functions.CapribedsideLoginFunctions.<init>(CapribedsideLoginFunctions.java:15)
+	at Test.BedsideBreastMilkLotExpForFortifiersTest.test(BedsideBreastMilkLotExpForFortifiersTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- Test.TestSystemManager -->
+        </test-method> <!-- test -->
+      </class> <!-- Test.BedsideBreastMilkLotExpForFortifiersTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
