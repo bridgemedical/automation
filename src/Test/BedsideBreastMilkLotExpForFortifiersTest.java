@@ -1,6 +1,10 @@
 package Test;
 
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+
 import org.testng.annotations.BeforeTest;
 import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
@@ -49,22 +53,25 @@ public class BedsideBreastMilkLotExpForFortifiersTest {
 	  CapribedsideSelectPatientFunctions selectpatiendpage = new CapribedsideSelectPatientFunctions();
 	  DonorMilkMainMenuFunctions mainmenupage = new DonorMilkMainMenuFunctions();
 	  DonorMilkFormulaPrintLabelsPageFunction printlabelspage = new DonorMilkFormulaPrintLabelsPageFunction();
+	  String lotNumber="10";
 	  
-	  
-	  loginFunctions.adminLogin();
-		
+	  loginFunctions.adminLogin();	
 	  selectpatiendpage.clickMilkManagementLink();
-	  
 	  mainmenupage.clickPrintFormulaLabelsButton();
-	  System.out.println("Formula label\n");
-	  
 	  printlabelspage.clickSelectForifierButton();
-	  System.out.println("Formula label\n");
-	 
+	  
 	  printlabelspage.clickFirstFortifiercheckbox();
-	  System.out.println("Formula label\n");
 	  printlabelspage.selectFirstFortifierExpDate();
-	  System.out.println("Formula label\n");
+	  printlabelspage.clickFirstFortifiercheckbox();
+	  
+	  printlabelspage.clickSecondFortifiercheckbox();
+	  printlabelspage.writeSecondFortifierLotTextbox(lotNumber);
+	  printlabelspage.clickSecondFortifiercheckbox();
+	  
+	  printlabelspage.clickThirdFortifierCheckbox();
+	  printlabelspage.selectThirdFortifierExpDate();
+	  printlabelspage.writeThirdFortifierLotTextbox(lotNumber);
+	  printlabelspage.clickThirdFortifierCheckbox();
 	  
 	  IEDriver.ieDriver.close();
   }

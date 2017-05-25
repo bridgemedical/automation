@@ -23,46 +23,77 @@ public class DonorMilkFormulaPrintLabelsPageFunction
 
 	public void clickFirstFortifiercheckbox()
 	{
-		seleniumFunctions.waitForElement(printFormulaLabel.firstFortifiercheckbox);
-		printFormulaLabel.firstFortifiercheckbox.click();
+		try {
+			seleniumFunctions.waitForElement(printFormulaLabel.firstFortifiercheckbox);
+			printFormulaLabel.firstFortifiercheckbox.click();
+		} catch (Exception e) {
+			System.out.println("Failed to click on 1st fortifier checkbox in DonorMilkFormulaPrintLabelsPageFunction: "+e);
+		}
 	}
 		
 	public void selectFirstFortifierExpDate()
 	{
-		seleniumFunctions.waitForElement(printFormulaLabel.firstFortExpTextBox);
-		printFormulaLabel.firstFortExpTextBox.click();
-		seleniumFunctions.waitForElement(printFormulaLabel.firstFortDateSelectorPopup);
-		printFormulaLabel.firstFortExpDateSelection.click();
-		assert(printFormulaLabel.firstFortExpTextBox.getText()!=null);
+		try {
+			seleniumFunctions.waitForElement(printFormulaLabel.firstFortExpTextBox);
+			printFormulaLabel.firstFortExpTextBox.click();
+			seleniumFunctions.waitForElement(printFormulaLabel.firstFortExpDateSelection);
+			printFormulaLabel.firstFortExpDateSelection.click();
+		} catch (Exception e) {
+			System.out.println("Failed to select 1st fortifier Exp Date in DonorMilkFormulaPrintLabelsPageFunction: "+e);
+		}
 	}
 	
 	public void clickSecondFortifiercheckbox()
 	{
-		seleniumFunctions.waitForElement(printFormulaLabel.secondFortifiercheckbox);
-		printFormulaLabel.firstFortifiercheckbox.click();
+		try {
+			seleniumFunctions.waitForElement(printFormulaLabel.secondFortifiercheckbox);
+			printFormulaLabel.secondFortifiercheckbox.click();
+		} catch (Exception e) {
+			System.out.println("Failed to click on 2nd fortifier checkbox in DonorMilkFormulaPrintLabelsPageFunction: "+e);
+		}
 	}
 	
 	public void writeSecondFortifierLotTextbox(String lotNumber)
 	{
-		seleniumFunctions.waitForElement(printFormulaLabel.SecondFortLottextbox);
-		printFormulaLabel.SecondFortLottextbox.sendKeys(lotNumber);
+		try {
+			seleniumFunctions.waitForElement(printFormulaLabel.secondFortLottextbox);
+			printFormulaLabel.secondFortLottextbox.sendKeys(lotNumber);
+		} catch (Exception e) {
+			System.out.println("Failed to click on 2nd fortifier Lot# in DonorMilkFormulaPrintLabelsPageFunction: "+e);
+		}
 	}
 	
 
 	public void clickThirdFortifierCheckbox()
 	{
-		seleniumFunctions.waitForElement(printFormulaLabel.thirdFortifierCheckbox);
-		printFormulaLabel.thirdFortifierCheckbox.click();
+		try {
+			seleniumFunctions.waitForElement(printFormulaLabel.thirdFortifierCheckbox);
+			printFormulaLabel.thirdFortifierCheckbox.click();
+		} catch (Exception e) {
+			System.out.println("Failed to click on 3rd fortifier checkbox in DonorMilkFormulaPrintLabelsPageFunction: "+e);
+		}
 	}
 	
 	public void selectThirdFortifierExpDate()
 	{
-		seleniumFunctions.waitForElement(printFormulaLabel.thirdFortExpTextbox);
-		printFormulaLabel.thirdFortExpTextbox.click();
-		seleniumFunctions.waitForElement(printFormulaLabel.thirdFortDateSelectorPopup);
-		printFormulaLabel.thirdFortExpDateSelection.click();
-		assert(printFormulaLabel.thirdFortExpDateSelection.getText()!=null);
+		try {
+			seleniumFunctions.waitForElement(printFormulaLabel.thirdFortExpTextbox);
+			printFormulaLabel.thirdFortExpTextbox.click();
+			seleniumFunctions.waitForElement(printFormulaLabel.thirdFortExpDateSelection);
+			printFormulaLabel.thirdFortExpDateSelection.click();
+		} catch (Exception e) {
+			System.out.println("Failed to click on 3rd fortifier Exp Date in DonorMilkFormulaPrintLabelsPageFunction: "+e);
+		}
 	}
 	
+	public void writeThirdFortifierLotTextbox(String lotNumber)
+	{
+		try {
+			seleniumFunctions.waitForElement(printFormulaLabel.thirdFortLotTextbox);
+			printFormulaLabel.thirdFortLotTextbox.sendKeys(lotNumber);
+		} catch (Exception e) {
+			System.out.println("Failed to click on 3rd fortifier Lot# in DonorMilkFormulaPrintLabelsPageFunction: "+e);
+		}
+	}
 	
 }
