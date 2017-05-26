@@ -10,7 +10,7 @@ import com.pageObjects.CapribedsideSelectPatientPage;
 
 public class CapribedsideSelectPatientFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideSelectPatientPage selectPatientPage = PageFactory.initElements(IEDriver.ieDriver,
 			CapribedsideSelectPatientPage.class);
 

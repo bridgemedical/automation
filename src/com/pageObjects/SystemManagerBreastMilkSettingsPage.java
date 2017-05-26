@@ -18,4 +18,6 @@ public class SystemManagerBreastMilkSettingsPage
 	@FindBy (id = "lstBottleFortExpMode") 		public WebElement selectFortifiedExpLengthUnits;
 	@FindBy (id = "txtDonorMilkThawExpHours") 	public WebElement textboxDonormilkThawedExp;
 	
+	@FindBy (xpath="/html/body/div/div[1]/form/div[7]/table[1]/tbody/tr/td[1]/input[2]")
+	public WebElement linkFortifierSettings;
 }

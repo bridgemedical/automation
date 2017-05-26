@@ -15,7 +15,7 @@ public class SystemManagerLoginPageFunctions
 	
 	public SystemManagerLoginPageFunctions(String url) 
 	{
-		this.url = url;
+		//this.url = url;
 		ieDriver = new IEDriver(url);
 		loginPage = PageFactory.initElements(IEDriver.ieDriver,SystemManagerLoginPage.class );
 	}

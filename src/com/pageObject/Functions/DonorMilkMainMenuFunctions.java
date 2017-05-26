@@ -9,7 +9,7 @@ import com.pageObjects.DonorMilkMainMenuPage;
 
 public class DonorMilkMainMenuFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	DonorMilkMainMenuPage donorMilkMainMenuPage = PageFactory.initElements(IEDriver.ieDriver,
 			DonorMilkMainMenuPage.class);
 

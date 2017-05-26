@@ -5,14 +5,22 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.bridge.utilities.IEDriver;
+import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.SystemManagerBreastMilkSettingsPage;
 
 public class SystemManagerBreastMilkSettingsPageFunctions 
 {
 	WebElement element;
 	Select sel;
+	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
 	SystemManagerBreastMilkSettingsPage breastmailsettingspage =  PageFactory.initElements(IEDriver.ieDriver, SystemManagerBreastMilkSettingsPage.class );
 			
+	public void clickFortifierSettingsLink()
+	{
+		seleniumFunctions.waitForElement(breastmailsettingspage.linkFortifierSettings);
+		breastmailsettingspage.linkFortifierSettings.click();
+	}
+	
 	public void selectFreshExpTimeUnit(String a) throws InterruptedException
     {
 		element= breastmailsettingspage.textboxFreshExpLengthUnits;
