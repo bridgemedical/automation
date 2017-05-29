@@ -1,11 +1,7 @@
-package Test;
+package regressionTestPlans;
 
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
-
-import org.testng.annotations.BeforeTest;
 import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.pageObject.Functions.CapribedsideLoginFunctions;
@@ -19,6 +15,7 @@ import com.pageObject.Functions.SystemManagerMainPageFunction;
 
 
 public class BedsideBreastMilkLotExpForFortifiersTest {
+	
  
 //@BeforeTest
  public void setup()
