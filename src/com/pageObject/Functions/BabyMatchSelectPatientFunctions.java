@@ -2,7 +2,6 @@ package com.pageObject.Functions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.BabyMatchSelectPatientPage;
@@ -13,7 +12,7 @@ public class BabyMatchSelectPatientFunctions {
 
 	// Constants constants = new Constants();
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.babyMatchUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.babyMatchUrl);
 	BabyMatchSelectPatientPage babyMatchSelectPatient = PageFactory.initElements(IEDriver.ieDriver,
 			BabyMatchSelectPatientPage.class);
 

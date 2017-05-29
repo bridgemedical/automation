@@ -3,15 +3,14 @@ package com.pageObject.Functions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideStartTransfusionPage;
 
-public class CapribedsideStartTransfusionPageFunctions {
+public class CapribedsideStartTransfusionFunctions {
 
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideStartTransfusionPage startTransfusionPage = PageFactory.initElements(IEDriver.ieDriver,
 			CapribedsideStartTransfusionPage.class);
 
@@ -504,6 +503,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	public void enterTemperatureVitalsPage(String temperature) {
 		try {
 			seleniumFunctions.waitForElement(startTransfusionPage.vitalsTemperatureFahrenheitTextbox);
+			startTransfusionPage.vitalsTemperatureFahrenheitTextbox.clear();
 			startTransfusionPage.vitalsTemperatureFahrenheitTextbox.sendKeys(temperature);
 
 		} catch (Exception e) {
@@ -528,6 +528,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	public void enterVitalsHeartRate(String heartRate) {
 		try {
 			seleniumFunctions.waitForElement(startTransfusionPage.vitalsHeartRateTextbox);
+			startTransfusionPage.vitalsHeartRateTextbox.clear();
 			startTransfusionPage.vitalsHeartRateTextbox.sendKeys(heartRate);
 
 		} catch (Exception e) {
@@ -539,6 +540,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	public void enterVitalsSystolicBloodPressure(String systolicBloodPressure) {
 		try {
 			seleniumFunctions.waitForElement(startTransfusionPage.vitalsSystolicBloodPressureTextbox);
+			startTransfusionPage.vitalsSystolicBloodPressureTextbox.clear();
 			startTransfusionPage.vitalsSystolicBloodPressureTextbox.sendKeys(systolicBloodPressure);
 
 		} catch (Exception e) {
@@ -551,6 +553,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	public void enterVitalsDiastolicBloodPressure(String diastolicBloodPressure) {
 		try {
 			seleniumFunctions.waitForElement(startTransfusionPage.vitalsDiastolicBloodPressureTextbox);
+			startTransfusionPage.vitalsDiastolicBloodPressureTextbox.clear();
 			startTransfusionPage.vitalsDiastolicBloodPressureTextbox.sendKeys(diastolicBloodPressure);
 
 		} catch (Exception e) {
@@ -574,6 +577,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	public void enterVitalsRespiration(String respirationValue) {
 		try {
 			seleniumFunctions.waitForElement(startTransfusionPage.vitalsRespirationTextbox);
+			startTransfusionPage.vitalsRespirationTextbox.clear();
 			startTransfusionPage.vitalsRespirationTextbox.sendKeys(respirationValue);
 
 		} catch (Exception e) {
@@ -585,6 +589,7 @@ public class CapribedsideStartTransfusionPageFunctions {
 	public void enterVitalsOxygenSaturation(String oxygenSaturationValue) {
 		try {
 			seleniumFunctions.waitForElement(startTransfusionPage.vitalsOxygenSaturationTextBox);
+			startTransfusionPage.vitalsOxygenSaturationTextBox.clear();
 			startTransfusionPage.vitalsOxygenSaturationTextBox.sendKeys(oxygenSaturationValue);
 
 		} catch (Exception e) {

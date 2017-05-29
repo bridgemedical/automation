@@ -2,7 +2,6 @@ package com.bridge.utilities;
 
 public class Constants {
 
-
     public static final String FORMAT_HL7_LONG_DATE_TIME            = "yyyyMMddHHmm";
     public static final String FORMAT_SHORT_TIME                    = "h:mm";
     public static final String FORMAT_MILITARY_TIME                 = "HH:mm";
@@ -23,6 +22,18 @@ public class Constants {
     public static final String babyMatchUrl ="http://10.162.106.174/TransSpec2017010102/babymatch/Login.aspx";
     public static final String ADMIN_USERNAME 						="superuser";
     public static final String ADMIN_PASSWORD						="123";
+    public static final String idPateintA = "635201";
+    public static final String namePateintA = "TIMMONS, BABY BOY";
+    public static final String dateFormatForUnitNumber = "MMddHHmmSS";
+    public static final String bloodTypeOpos = "O pos";
+    public static final String bloodProductPD1 = "PD1";
+    public static final String donorCenterCode = "ARC-ALABAMA; BIRMINGHAM";
+    public static final String regularDateFormat = "MM/dd/yyyy HH:mm";
+    public static final String secondOrderVerificationBy = "Nancy";
+    
+    
+    
+    
     
     
 }

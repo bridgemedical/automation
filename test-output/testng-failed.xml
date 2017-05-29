@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Test.BedsideBreastMilkLotExpForFortifiersTest">
+      <class name="regressionTestPlans.BRDGRegHoldTransfusionTest">
         <methods>
-          <include name="test"/>
+          <include name="holdTransfusionTest"/>
+          <include name="afterTest"/>
+          <include name="systemManagerSettingsTest"/>
         </methods>
-      </class> <!-- Test.BedsideBreastMilkLotExpForFortifiersTest -->
+      </class> <!-- regressionTestPlans.BRDGRegHoldTransfusionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

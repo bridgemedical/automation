@@ -3,14 +3,13 @@ package com.pageObject.Functions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsidePatientMainMenuPage;
 
 public class CapribedsidePatientMainMenuFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsidePatientMainMenuPage patientMainMenuPage = PageFactory.initElements(IEDriver.ieDriver,
 			CapribedsidePatientMainMenuPage.class);
 
@@ -55,6 +54,16 @@ public class CapribedsidePatientMainMenuFunctions {
 		} catch (Exception e) {
 			System.out
 					.println("BabyMatchSelectPatientFunctions: clickBrowseTransfusionHistoryButton method Failed " + e);
+		}
+
+	}
+	public void verifyBrowseTransfusionHistoryButtonDisplay() {
+		try {
+			seleniumFunctions.waitForElement(patientMainMenuPage.browseTransfusionHistoryButton);
+			Assert.assertTrue(patientMainMenuPage.browseTransfusionHistoryButton.isDisplayed(), "browseTransfusionHistoryButton is displayed");
+
+		} catch (Exception e) {
+			System.out.println("BabyMatchSelectPatientFunctions: verifyBrowseTransfusionHistoryButtonDisplay method Failed " + e);
 		}
 
 	}
@@ -237,6 +246,16 @@ public class CapribedsidePatientMainMenuFunctions {
 		}
 
 	}
+	public void verifyStartTransfusionButtonDisplay() {
+		try {
+			seleniumFunctions.waitForElement(patientMainMenuPage.startTransfusionButton);
+			Assert.assertTrue(patientMainMenuPage.startTransfusionButton.isDisplayed(), "Start Transfusion Button is displayed");
+
+		} catch (Exception e) {
+			System.out.println("BabyMatchSelectPatientFunctions: verifyStartTransfusionButtonDisplay method Failed " + e);
+		}
+
+	}
 
 	public void clickStateChangeButton() {
 		try {
@@ -257,6 +276,16 @@ public class CapribedsidePatientMainMenuFunctions {
 		} catch (Exception e) {
 			System.out
 					.println("BabyMatchSelectPatientFunctions: clickViewReactionInformationButton method Failed " + e);
+		}
+
+	}
+	public void verifyViewReactionInformationButtonDisplay() {
+		try {
+			seleniumFunctions.waitForElement(patientMainMenuPage.viewReactionInformationButton);
+			Assert.assertTrue(patientMainMenuPage.viewReactionInformationButton.isDisplayed(), "View Reaction Information Button is displayed");
+
+		} catch (Exception e) {
+			System.out.println("BabyMatchSelectPatientFunctions: verifyViewReactionInformationButtonDisplay method Failed " + e);
 		}
 
 	}

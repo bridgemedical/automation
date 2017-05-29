@@ -2,14 +2,13 @@ package com.pageObject.Functions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideChangePasswordPage;
 
 public class CapribedsideChangePasswordFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideChangePasswordPage changePasswordPage = PageFactory.initElements(IEDriver.ieDriver,
 			CapribedsideChangePasswordPage.class);
 

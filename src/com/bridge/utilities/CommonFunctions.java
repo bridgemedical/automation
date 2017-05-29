@@ -10,7 +10,6 @@ import static org.monte.media.VideoFormatKeys.CompressorNameKey;
 import static org.monte.media.VideoFormatKeys.DepthKey;
 import static org.monte.media.VideoFormatKeys.ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE;
 import static org.monte.media.VideoFormatKeys.QualityKey;
-import static org.testng.AssertJUnit.assertFalse;
 
 import java.awt.AWTException;
 import java.awt.GraphicsConfiguration;
@@ -23,47 +22,43 @@ import org.monte.media.Format;
 import org.monte.media.FormatKeys.MediaType;
 import org.monte.media.math.Rational;
 import org.monte.screenrecorder.ScreenRecorder;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pageObject.Functions.CapribedsideLoginFunctions;
-import com.pageObject.Functions.SystemManagerUsersPageFunctions;
+import com.pageObject.Functions.CapribedsideStartTransfusionFunctions;
 import com.pageObjects.CapribedsideLoginPage;
 import com.pageObjects.CapribedsideReceiveBottlesPage;
 import com.pageObjects.CapribedsideSelectPatientPage;
 import com.pageObjects.SystemManagerMainPage;
-import com.pageObjects.SystemManagerUsersPage;
 
 public class CommonFunctions  {
 
+	//private static final String Url = null;
 	String username = "superuser";
 	String password = "123";
-	IEDriver ieDriver = new IEDriver(null);
-	CapribedsideLoginPage login;
+	//IEDriver ieDriver = new IEDriver(null);
+	//IEDriver ieDriver = new IEDriver(null);
+	CapribedsideLoginPage login = new CapribedsideLoginPage();
+	Constants constants = new Constants();
 	CapribedsideSelectPatientPage select_page;
 	CapribedsideReceiveBottlesPage rece_page;
 	SystemManagerMainPage sysMain = new SystemManagerMainPage();
 	private static ScreenRecorder screenRecorder;
-
-	/*public void call_Driver(String URL) throws InterruptedException {
-		//iedriver.callDriver(URL);
-	}*/
-
-	/*public WebDriver getCurrentDriver() throws InterruptedException {
-
-		return ieDriver.getCurrentdriver();
-
-	}*/
-	CapribedsideLoginFunctions loginFunctions = new CapribedsideLoginFunctions();
-	public void login(String URL, String username, String password) throws InterruptedException {
-		//iedriver.callDriver(URL);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	
+	//CapribedsideLoginFunctions loginFunctions = new CapribedsideLoginFunctions();
+	public void login(String username, String password) throws InterruptedException {
+		/*//iedriver.callDriver(URL);
 		loginFunctions.enterUserName("Superuser");
 		loginFunctions.enterPassword("123");
+		loginFunctions.clickLoginButton();
+		Thread.sleep(1000);*/
+		//ieDriver.iEDriver();
+		CapribedsideLoginFunctions loginFunctions =new CapribedsideLoginFunctions();
+		loginFunctions.enterUserName(username);
+		loginFunctions.enterPassword(password);
 		loginFunctions.clickLoginButton();
 		Thread.sleep(1000);
 	}
@@ -138,12 +133,12 @@ public class CommonFunctions  {
 		this.screenRecorder.stop();
 	}
 
-	public void createUser(String sysManURL, String fName, String lName, String userid, String password, String role,
+/*	public void createUser(String sysManURL, String fName, String lName, String userid, String password, String role,
 			String initial, String alias) throws InterruptedException {
 		SystemManagerMainPage sysmanMenuPage = new SystemManagerMainPage();
 		SystemManagerUsersPage userPage = new SystemManagerUsersPage();
 		SystemManagerUsersPageFunctions userpagefunctions = new SystemManagerUsersPageFunctions();
-		login(sysManURL, "superuser", "123");
+		//login(sysManURL, "superuser", "123");
 		Thread.sleep(2000);
 		sysmanMenuPage.buttonUsers.click();
 		Thread.sleep(2000);
@@ -176,6 +171,48 @@ public class CommonFunctions  {
 		assertFalse("\n\n cannot create new user " + userid + "\n\n", url.equals(url2));
 		sysmanMenuPage.linkLogout.click();
 		//close();
+	}*/
+	
+	/*
+	 * ------BloodTransfusion Commonfunctions
+	 */
+	public void recordVitals() throws InterruptedException
+	{
+		CapribedsideStartTransfusionFunctions startTransfusionFunctions = new CapribedsideStartTransfusionFunctions();
+		startTransfusionFunctions.enterTemperatureVitalsPage("102");
+		Thread.sleep(2000);
+		startTransfusionFunctions.selectTemperatureSite("Oral");
+		Thread.sleep(1000);
+		startTransfusionFunctions.enterVitalsHeartRate("");
+		Thread.sleep(3000);
+		startTransfusionFunctions.enterVitalsHeartRate("93");
+		Thread.sleep(1000);
+		startTransfusionFunctions.enterVitalsSystolicBloodPressure("");
+		Thread.sleep(3000);
+		startTransfusionFunctions.enterVitalsSystolicBloodPressure("123");
+		Thread.sleep(1000);
+		startTransfusionFunctions.enterVitalsDiastolicBloodPressure("");
+		Thread.sleep(3000);
+		startTransfusionFunctions.enterVitalsDiastolicBloodPressure("84");
+		Thread.sleep(1000);
+		startTransfusionFunctions.enterVitalsRespiration("");
+		Thread.sleep(3000);
+		startTransfusionFunctions.enterVitalsRespiration("86");
+		Thread.sleep(1000);
+		startTransfusionFunctions.enterVitalsOxygenSaturation("");
+		Thread.sleep(3000);
+		startTransfusionFunctions.enterVitalsOxygenSaturation("93");
+		Thread.sleep(2000);
+		startTransfusionFunctions.clickVitalsContinueButton();
+		Thread.sleep(2000);
+		startTransfusionFunctions.clickVitalsContinueButton();
+		
+		
+		
 	}
+	
+	
+	
+	
 
 }

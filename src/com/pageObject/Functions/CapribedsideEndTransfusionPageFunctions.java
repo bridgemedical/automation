@@ -2,14 +2,13 @@ package com.pageObject.Functions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideEndTransfusionPage;
 
 public class CapribedsideEndTransfusionPageFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideEndTransfusionPage endtransfusionpage = PageFactory.initElements(IEDriver.ieDriver,
 			CapribedsideEndTransfusionPage.class);
 

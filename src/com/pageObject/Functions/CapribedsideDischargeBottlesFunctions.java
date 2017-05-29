@@ -2,7 +2,6 @@ package com.pageObject.Functions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideDischargeBottlesPage;
@@ -11,7 +10,7 @@ import junit.framework.Assert;
 
 public class CapribedsideDischargeBottlesFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideDischargeBottlesPage dischargeBottlesPage = PageFactory.initElements(IEDriver.ieDriver,
 			CapribedsideDischargeBottlesPage.class);
 

@@ -2,14 +2,13 @@ package com.pageObject.Functions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.DonorMilkReceiveDonorBottlePage;
 
 public class DonorMilkReceiveDonorBottleFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	DonorMilkReceiveDonorBottlePage receiveDonorBottlesPage = PageFactory.initElements(IEDriver.ieDriver,
 			DonorMilkReceiveDonorBottlePage.class);
 

@@ -5,13 +5,10 @@ import org.openqa.selenium.WebElement;
 
 import com.bridge.utilities.IEDriver;
 
-public class CapribedsideBabyMatchLoginPage extends IEDriver
+public class CapribedsideBabyMatchLoginPage 
 {
-	public CapribedsideBabyMatchLoginPage(String URL) {
-		super(URL);
-		// TODO Auto-generated constructor stub
-	}
-	private static WebElement element=null;
+	
+/*	private static WebElement element=null;
 	
 	public static WebElement enterUsername()
 	{
@@ -33,7 +30,7 @@ public class CapribedsideBabyMatchLoginPage extends IEDriver
 		element  = ieDriver.findElement(By.id("btnChangePw"));
 		return element;
 	}
-	
+	*/
 	
 
 }

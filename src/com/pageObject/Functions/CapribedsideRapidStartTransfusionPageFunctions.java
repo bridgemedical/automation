@@ -3,7 +3,6 @@ package com.pageObject.Functions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideRapidStartTransfusionPage;
@@ -11,7 +10,7 @@ import com.pageObjects.CapribedsideRapidStartTransfusionPage;
 public class CapribedsideRapidStartTransfusionPageFunctions {
 
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideRapidStartTransfusionPage rapidStartTransfusionPage = PageFactory.initElements(IEDriver.ieDriver,
 			CapribedsideRapidStartTransfusionPage.class);
 

@@ -1,6 +1,7 @@
 package com.pageObject.Functions;
 
 import org.openqa.selenium.support.PageFactory;
+
 import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
@@ -15,7 +16,7 @@ public class SystemManagerLoginPageFunctions
 	
 	public SystemManagerLoginPageFunctions(String url) 
 	{
-		//this.url = url;
+		this.url = url;
 		ieDriver = new IEDriver(url);
 		loginPage = PageFactory.initElements(IEDriver.ieDriver,SystemManagerLoginPage.class );
 	}

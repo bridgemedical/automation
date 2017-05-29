@@ -2,7 +2,6 @@ package com.pageObject.Functions;
 
 import org.openqa.selenium.support.PageFactory;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideChangeBloodTypePage;
@@ -10,7 +9,7 @@ import com.pageObjects.CapribedsideChangeBloodTypePage;
 public class CapribedsideChangeBloodTypeFunctions 
 {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideChangeBloodTypePage changeBloodTypePage = PageFactory.initElements(IEDriver.ieDriver, CapribedsideChangeBloodTypePage.class );
 
 	public void selectNewBloodType(String newBloodType) {

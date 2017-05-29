@@ -16,4 +16,14 @@ public class SystemManagerMainPageFunction
 		seleniumFunctions.waitForElement(menuPage.buttonBreastMilkSettings);
 		menuPage.getButtonBreastMilkSettings().click();
 	}
+	public void clickRolesButton()
+	{
+		seleniumFunctions.waitForElement(menuPage.buttonRoles);
+		menuPage.buttonRoles.click();
+	}
+	public void clickUsersButton()
+	{
+		seleniumFunctions.waitForElement(menuPage.buttonUsers);
+		menuPage.buttonUsers.click();
+	}
 }

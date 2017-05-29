@@ -1,6 +1,8 @@
 package com.bridge.utilities;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,5 +27,11 @@ public class SeleniumFunctions {
 	public void waitForElement(WebElement locator) {
 		WebDriverWait wait = new WebDriverWait(IEDriver.ieDriver, 10000);
 		wait.until(ExpectedConditions.visibilityOf(locator));
-	} 
+	}
+
+	public void pressEnter() throws InterruptedException {
+		Actions act = new Actions(IEDriver.ieDriver);
+		act.sendKeys(Keys.ENTER).perform();
+		Thread.sleep(1000);
+	}
 }

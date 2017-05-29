@@ -1,16 +1,16 @@
 package com.pageObject.Functions;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
 import com.pageObjects.CapribedsideSelectPatientPage;
 
 public class CapribedsideSelectPatientFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
-	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideSelectPatientPage selectPatientPage = PageFactory.initElements(IEDriver.ieDriver,
 			CapribedsideSelectPatientPage.class);
 
@@ -24,6 +24,23 @@ public class CapribedsideSelectPatientFunctions {
 		}
 
 	}
+
+	public void scanPatientid(String patientID) {
+		try {
+			seleniumFunctions.waitForElement(selectPatientPage.patientIdTextbox);
+			Actions actions = new Actions(IEDriver.ieDriver);
+			actions.keyDown(Keys.ALT).perform();
+			selectPatientPage.patientIdTextbox.sendKeys("[");
+			selectPatientPage.patientIdTextbox.sendKeys(patientID);
+			actions.keyDown(Keys.ALT).perform();
+			selectPatientPage.patientIdTextbox.sendKeys("]");
+
+		} catch (Exception e) {
+			System.out.println("CapribedsideSelectPatientFunctions: scanPatientid method Failed " + e);
+		}
+
+	}
+
 	public void verifyErrorMessage() {
 		try {
 			seleniumFunctions.waitForElement(selectPatientPage.ErrorMsg);
@@ -34,6 +51,7 @@ public class CapribedsideSelectPatientFunctions {
 		}
 
 	}
+
 	public void clickLogoutLink() {
 		try {
 			seleniumFunctions.waitForElement(selectPatientPage.logoutLink);
@@ -44,6 +62,7 @@ public class CapribedsideSelectPatientFunctions {
 		}
 
 	}
+
 	public void clickMilkManagementLink() {
 		try {
 			seleniumFunctions.waitForElement(selectPatientPage.milkManagementLink);
@@ -54,6 +73,7 @@ public class CapribedsideSelectPatientFunctions {
 		}
 
 	}
+
 	public void clickReportsLink() {
 		try {
 			seleniumFunctions.waitForElement(selectPatientPage.reportsLink);
@@ -64,23 +84,29 @@ public class CapribedsideSelectPatientFunctions {
 		}
 
 	}
+
 	public void verifyPatientNotFoundErrorMessage() {
 		try {
 			seleniumFunctions.waitForElement(selectPatientPage.patientNotFoundErrorMessage);
-			Assert.assertTrue(selectPatientPage.patientNotFoundErrorMessage.isDisplayed(), "Patient Not Found Error message is displayed");
+			Assert.assertTrue(selectPatientPage.patientNotFoundErrorMessage.isDisplayed(),
+					"Patient Not Found Error message is displayed");
 
 		} catch (Exception e) {
-			System.out.println("CapribedsideSelectPatientFunctions: verifyPatientNotFoundErrorMessage method Failed " + e);
+			System.out.println(
+					"CapribedsideSelectPatientFunctions: verifyPatientNotFoundErrorMessage method Failed " + e);
 		}
 
 	}
+
 	public void verifyExpectingPatientIDErrorMessage() {
 		try {
 			seleniumFunctions.waitForElement(selectPatientPage.expectingPatientIDErrorMessage);
-			Assert.assertTrue(selectPatientPage.expectingPatientIDErrorMessage.isDisplayed(), "Expecting patient id Error message is displayed");
+			Assert.assertTrue(selectPatientPage.expectingPatientIDErrorMessage.isDisplayed(),
+					"Expecting patient id Error message is displayed");
 
 		} catch (Exception e) {
-			System.out.println("CapribedsideSelectPatientFunctions: verifyPatientNotFoundErrorMessage method Failed " + e);
+			System.out.println(
+					"CapribedsideSelectPatientFunctions: verifyPatientNotFoundErrorMessage method Failed " + e);
 		}
 
 	}

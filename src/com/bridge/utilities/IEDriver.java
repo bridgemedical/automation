@@ -34,33 +34,22 @@ public class IEDriver {
 		test = extent.startTest(TestName);
 
 	}
-
 	public ExtentReports extent_Reports() {
-
 		return extent;
-
 	}
-
 	public ExtentTest extent_Test() {
-
 		// test = extent.startTest(TestName);
 		return test;
 	}
 
-	public void close() {
-		ieDriver.close();
-	}
-
-	public WebDriver getCurrentdriver() {
-		return ieDriver;
-	}*/
-
+	*/
 	public IEDriver(String URL) {
 
 		this.URL = URL;
 		ieDriver = iEDriver();
 
 	}
+	
 
 	public WebDriver iEDriver() {
 
@@ -72,5 +61,17 @@ public class IEDriver {
 		return ieDriver;
 
 	}
+	public static WebDriver iEDriver(String url) {
+
+		System.setProperty("webdriver.ie.driver", "C:/IEDriverServer_Win32_3.4.0/IEDriverServer.exe");
+		ieDriver = new InternetExplorerDriver();
+		ieDriver.navigate().to(url);
+		ieDriver.manage().window().maximize();
+
+		return ieDriver;
+
+	}
+	
+	
 
 }

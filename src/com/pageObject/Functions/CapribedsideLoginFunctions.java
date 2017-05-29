@@ -12,23 +12,21 @@ public class CapribedsideLoginFunctions
 	//Constants constants = new Constants();
 	//String URL = "http://10.162.106.174/TransSpec2017010102/CapriBedside/Login.aspx";
 	SeleniumFunctions seleniumFunction = new SeleniumFunctions();
-	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideLoginPage login = PageFactory.initElements(IEDriver.ieDriver, CapribedsideLoginPage.class);
 	
 	/*
 	 * Method to enter UserName
 	 */
 	public void enterUserName(String userName) {
-	   // try {
-			//commonFunctions.waitForElement(login.getUserName());
+	    try {
+	    	seleniumFunction.waitForElement(login.getUserName());
 			login.getUserName().clear();
 			login.userName.sendKeys(userName);
-			//login.getUserName().sendKeys(userName);
-		
-		// } 
-	    //catch (Exception e) {
-		// System.out.println("CapribedsideLoginFunctions-enterUserName : Mathod is failed" + e);
-		//}
+		 } 
+	    catch (Exception e) {
+		 System.out.println("CapribedsideLoginFunctions-enterUserName : Mathod is failed" + e);
+		}
 	}
 	/*
 	 * Method to enter Password
@@ -47,7 +45,7 @@ public class CapribedsideLoginFunctions
 	 */
 	public void clickLoginButton() {
 		try {
-			//commonFunctions.waitForElement(login.getLoginButton());
+			seleniumFunction.waitForElement(login.getLoginButton());
 			login.getLoginButton().click();
 		} catch (Exception e) {
 			System.out.println("CapribedsideLoginFunctions-clickLoginButton : Mathod is failed" + e);
@@ -58,7 +56,7 @@ public class CapribedsideLoginFunctions
 	 */
 	public void clickOnClickHereLink() {
 		try {
-			//commonFunctions.waitForElement(login.getClickHereLink());
+			seleniumFunction.waitForElement(login.getClickHereLink());
 			login.clickHereLink.click();
 		} catch (Exception e) {
 			System.out.println("CapribedsideLoginFunctions-clickOnClickHereLink : Mathod is failed" + e);
