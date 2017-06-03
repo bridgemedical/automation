@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.SystemManagerBreastMilkFortifierSettingsPage;
+import com.pageobjects.SystemManagerBreastMilkFortifierSettingsPage;
 
 public class SystemManagerBreastMilkFortifierSettingsPageFunction 
 {

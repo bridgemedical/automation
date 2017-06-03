@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideStateChangePage;
+import com.pageobjects.CapribedsideStateChangePage;
 
 public class CapribedsideStateChangeFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();

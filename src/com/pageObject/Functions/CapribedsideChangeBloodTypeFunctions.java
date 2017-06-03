@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideChangeBloodTypePage;
+import com.pageobjects.CapribedsideChangeBloodTypePage;
 
 public class CapribedsideChangeBloodTypeFunctions 
 {

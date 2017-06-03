@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideLoginPage;
+import com.pageobjects.CapribedsideLoginPage;
 
 public class CapribedsideLoginFunctions
 {

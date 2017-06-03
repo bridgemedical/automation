@@ -3,7 +3,7 @@ package com.pageObject.Functions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.bridge.utilities.IEDriver;
-import com.pageObjects.CapribedsideReportsMainPage;
+import com.pageobjects.CapribedsideReportsMainPage;
 
 public class CapribedsideReportsMainPageFunctions 
 {

@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideRapidStartTransfusionPage;
+import com.pageobjects.CapribedsideRapidStartTransfusionPage;
 
 public class CapribedsideRapidStartTransfusionPageFunctions {
 

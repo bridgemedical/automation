@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.bridge.utilities.IEDriver;
-import com.pageObjects.SystemManagerEditBloodProductPage;
+import com.pageobjects.SystemManagerEditBloodProductPage;
 
 public class SystemManagerEditBloodProductPageFunctions 
 {

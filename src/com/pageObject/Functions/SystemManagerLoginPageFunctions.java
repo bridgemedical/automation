@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.bridge.utilities.Constants;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.SystemManagerLoginPage;
+import com.pageobjects.SystemManagerLoginPage;
 
 public class SystemManagerLoginPageFunctions 
 {

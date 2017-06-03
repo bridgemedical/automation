@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.SystemManagerBreastMilkSettingsPage;
+import com.pageobjects.SystemManagerBreastMilkSettingsPage;
 
 public class SystemManagerBreastMilkSettingsPageFunctions 
 {

@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideChangePasswordPage;
+import com.pageobjects.CapribedsideChangePasswordPage;
 
 public class CapribedsideChangePasswordFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();

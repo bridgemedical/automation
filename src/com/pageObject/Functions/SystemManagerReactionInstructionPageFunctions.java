@@ -3,7 +3,7 @@ package com.pageObject.Functions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.bridge.utilities.IEDriver;
-import com.pageObjects.SystemManagerReactionInstructionPage;
+import com.pageobjects.SystemManagerReactionInstructionPage;
 
 public class SystemManagerReactionInstructionPageFunctions
 {

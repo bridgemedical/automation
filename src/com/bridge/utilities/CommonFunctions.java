@@ -28,10 +28,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pageObject.Functions.CapribedsideLoginFunctions;
 import com.pageObject.Functions.CapribedsideStartTransfusionFunctions;
-import com.pageObjects.CapribedsideLoginPage;
-import com.pageObjects.CapribedsideReceiveBottlesPage;
-import com.pageObjects.CapribedsideSelectPatientPage;
-import com.pageObjects.SystemManagerMainPage;
+import com.pageobjects.CapribedsideLoginPage;
+import com.pageobjects.CapribedsideReceiveBottlesPage;
+import com.pageobjects.CapribedsideSelectPatientPage;
+import com.pageobjects.SystemManagerMainPage;
 
 public class CommonFunctions  {
 

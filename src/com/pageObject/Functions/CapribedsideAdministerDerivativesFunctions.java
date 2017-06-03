@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.bridge.utilities.CommonFunctions;
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideAdministerDerivativesPage;
+import com.pageobjects.CapribedsideAdministerDerivativesPage;
 
 public class CapribedsideAdministerDerivativesFunctions {
 

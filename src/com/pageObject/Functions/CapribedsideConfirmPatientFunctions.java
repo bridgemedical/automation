@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideConfirmPatientPage;
+import com.pageobjects.CapribedsideConfirmPatientPage;
 
 public class CapribedsideConfirmPatientFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();

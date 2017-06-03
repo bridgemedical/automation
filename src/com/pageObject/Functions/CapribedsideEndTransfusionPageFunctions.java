@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideEndTransfusionPage;
+import com.pageobjects.CapribedsideEndTransfusionPage;
 
 public class CapribedsideEndTransfusionPageFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();

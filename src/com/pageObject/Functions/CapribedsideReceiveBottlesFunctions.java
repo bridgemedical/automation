@@ -7,8 +7,8 @@ import org.testng.Assert;
 
 import com.bridge.utilities.IEDriver;
 import com.bridge.utilities.SeleniumFunctions;
-import com.pageObjects.CapribedsideReceiveBottlesPage;
-import com.pageObjects.CapribedsideSelectPatientPage;
+import com.pageobjects.CapribedsideReceiveBottlesPage;
+import com.pageobjects.CapribedsideSelectPatientPage;
 
 public class CapribedsideReceiveBottlesFunctions {
 	SeleniumFunctions seleniumFunctions = new SeleniumFunctions();

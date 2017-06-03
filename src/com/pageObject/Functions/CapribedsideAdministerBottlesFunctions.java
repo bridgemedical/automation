@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
 import com.bridge.utilities.IEDriver;
-import com.pageObjects.CapribedsideAdministerBottlesPage;
+import com.pageobjects.CapribedsideAdministerBottlesPage;
 
 public class CapribedsideAdministerBottlesFunctions {
 

@@ -1,6 +1,6 @@
 package com.bridge.utilities;
 
-import com.pageObjects.CapribedsideStartTransfusionPage;
+import com.pageobjects.CapribedsideStartTransfusionPage;
 
 import multiScreenShot.MultiScreenShot;
 

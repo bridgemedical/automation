@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import com.bridge.utilities.IEDriver;
-import com.pageObjects.SystemManagerLoginSettingsPage;
+import com.pageobjects.SystemManagerLoginSettingsPage;
 
 public class SystemManagerLoginSettingsPageFunctions 
 {
