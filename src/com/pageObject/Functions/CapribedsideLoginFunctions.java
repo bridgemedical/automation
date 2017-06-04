@@ -12,7 +12,7 @@ public class CapribedsideLoginFunctions
 	//Constants constants = new Constants();
 	//String URL = "http://10.162.106.174/TransSpec2017010102/CapriBedside/Login.aspx";
 	SeleniumFunctions seleniumFunction = new SeleniumFunctions();
-	//IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
+	IEDriver ieDriver = new IEDriver(Constants.capribedsideUrl);
 	CapribedsideLoginPage login = PageFactory.initElements(IEDriver.ieDriver, CapribedsideLoginPage.class);
 	
 	/*

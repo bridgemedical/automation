@@ -18,7 +18,7 @@ import com.pageObject.Functions.SystemManagerMainPageFunction;
 public class BedsideBreastMilkLotExpForFortifiersTest {
 	
  
-@BeforeTest
+//@BeforeTest
  public void setup()
  {
 	 SystemManagerLoginPageFunctions systemManager = new SystemManagerLoginPageFunctions(Constants.systemManagerUrl);
@@ -39,7 +39,7 @@ public class BedsideBreastMilkLotExpForFortifiersTest {
 	 fortifierSettings.clickEditThirdFortifier();
 	 fortifierSettings.editFortifier("Yes","Yes","All","Yes");
 	 
-	 //IEDriver.ieDriver.close();
+	 IEDriver.ieDriver.close();
 	 }
 	
 	
@@ -47,7 +47,8 @@ public class BedsideBreastMilkLotExpForFortifiersTest {
 @Test
   public void test() 
   {
-	  CapribedsideLoginFunctions loginFunctions =new CapribedsideLoginFunctions();
+	System.out.println("Test ");
+	CapribedsideLoginFunctions loginFunctions =new CapribedsideLoginFunctions();
 	  CapribedsideSelectPatientFunctions selectpatiendpage = new CapribedsideSelectPatientFunctions();
 	  DonorMilkMainMenuFunctions mainmenupage = new DonorMilkMainMenuFunctions();
 	  DonorMilkFormulaPrintLabelsPageFunction printlabelspage = new DonorMilkFormulaPrintLabelsPageFunction();
@@ -70,7 +71,7 @@ public class BedsideBreastMilkLotExpForFortifiersTest {
 	  printlabelspage.selectThirdFortifierExpDate();
 	  printlabelspage.writeThirdFortifierLotTextbox(lotNumber);
 	  printlabelspage.clickThirdFortifierCheckbox();
-	  
-	 // IEDriver.ieDriver.close();
+	  System.out.println("Test ");
+	 IEDriver.ieDriver.close();
   }
 }
