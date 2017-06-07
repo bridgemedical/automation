@@ -18,7 +18,7 @@ import com.pageObject.Functions.SystemManagerMainPageFunction;
 public class BedsideBreastMilkLotExpForFortifiersTest {
 	
  
-//@BeforeTest
+@BeforeTest
  public void setup()
  {
 	 SystemManagerLoginPageFunctions systemManager = new SystemManagerLoginPageFunctions(Constants.systemManagerUrl);
